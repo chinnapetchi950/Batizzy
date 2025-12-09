@@ -40,7 +40,7 @@ import FontFamily from '../../helper/FontFamily';
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
 import {routes} from '../../navigation/Routes';
 import Loader from '../../common/Loader';
-import {useLanguage} from '../../context/LanguageContext';
+// import {useLanguage} from '../../context/LanguageContext';
 
 const EditProfileScreen = () => {
   const navigation = useNavigation();
@@ -71,7 +71,7 @@ const EditProfileScreen = () => {
   ] = useState([]);
 
   const [currentLocation, setCurrentLocation] = useState('');
-  const {selectedLanguage, changeLanguage} = useLanguage();
+  // const {selectedLanguage, changeLanguage} = useLanguage();
 
   useEffect(() => {
     Geocoder.init('AIzaSyCceRTsiY-2UPVwytF6wytwaGmonWjvTHo');
@@ -183,11 +183,11 @@ const EditProfileScreen = () => {
             isMatched && styles.selectedSkillContainer, // Highlight if selected
           ]}>
           <Text style={[styles.skillText, isMatched && styles.selectedText]}>
-            {selectedLanguage == 'fr' || item?.name_fr?.length > 18
+            {/* {selectedLanguage == 'fr' || item?.name_fr?.length > 18
               ? `${item?.name_fr?.slice(0, 18)}...`
               : selectedLanguage == 'de' || item?.name_de?.length > 18
               ? `${item?.name_de?.slice(0, 18)}...`
-              : `${item?.name?.slice(0, 30)}...`}{' '}
+              : `${item?.name?.slice(0, 30)}...`}{' '} */}
           </Text>
         </TouchableOpacity>
         {isMatched && (

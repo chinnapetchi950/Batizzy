@@ -3,17 +3,17 @@ import {icons} from '../helper/imageConstants';
 export default LanguageData = [
   {
     text: 'English',
-    image: icons.english,
+    image: icons.heartFill,
     code: 'en',
   },
   {
     text: 'French',
-    image: icons.france,
+    image: icons.heartFill,
     code: 'fr',
   },
   {
     text: 'German',
-    image: icons.german,
+    image: icons.heartFill,
     code: 'de',
   },
 ];

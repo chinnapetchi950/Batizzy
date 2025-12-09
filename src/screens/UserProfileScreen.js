@@ -446,7 +446,7 @@ const UserProfileScreen = () => {
               }}>
               <Image
                 source={
-                  item.is_liked === true ? icons.LikeFillIcon : icons.likeIcon
+                  item.is_liked === true ? icons.heartFill : icons.heartFill
                 }
                 style={styles.commentLikeicon}
               />
@@ -623,7 +623,7 @@ const UserProfileScreen = () => {
                 showRemoveButton(!isShowRemoveButton);
               }}>
               <Image
-                source={icons.horizontalThreeDot}
+                source={icons.heartFill}
                 style={styles.horizontalThreeDotIcon}
               />
             </Pressable>
@@ -650,7 +650,7 @@ const UserProfileScreen = () => {
             <TouchableOpacity style={styles.iconRow} onPress={onPressLikeBtn}>
               <Image
                 source={
-                  post.is_liked === true ? icons.LikeFillIcon : icons.likeIcon
+                  post.is_liked === true ? icons.heartFill : icons.heartFill
                 }
                 style={styles.likeicon}
               />
@@ -658,7 +658,7 @@ const UserProfileScreen = () => {
             </TouchableOpacity>
             <View style={styles.commentRow}>
               <Pressable onPress={toggleCommentSheet}>
-                <Image source={icons.commentIcon} style={styles.commentIcon} />
+                <Image source={icons.heartFill} style={styles.commentIcon} />
               </Pressable>
               <Text style={styles.countsText}>{post.total_comments}</Text>
             </View>
@@ -713,12 +713,12 @@ const UserProfileScreen = () => {
           <Text style={styles.name}>{isuserData?.name}</Text>
           <Image
             resizeMode="contain"
-            source={icons.certified}
+            source={icons.heartFill}
             style={styles.certifiedIcon}
           />
           <Image
             resizeMode="contain"
-            source={icons.badgeIcon}
+            source={icons.heartFill}
             style={styles.badgeIcon}
           />
         </View>
@@ -855,7 +855,7 @@ const UserProfileScreen = () => {
                       PickPhotos();
                     }}>
                     <Image
-                      source={icons.AttchmentIcon}
+                      source={icons.heartFill}
                       style={styles.AttchmentIcon}
                     />
                   </Pressable>
@@ -865,7 +865,7 @@ const UserProfileScreen = () => {
                       PostComment(isPostIdForComment, replyingTo);
                     }}>
                     <Image
-                      source={icons.sendMessageIcon}
+                      source={icons.heartFill}
                       style={styles.sendMessageIcon}
                     />
                   </Pressable>

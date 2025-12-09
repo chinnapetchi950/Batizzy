@@ -303,7 +303,7 @@ const SocialListScreen = () => {
                   setActivePostId(post?.id);
                 }}>
                 <Image
-                  source={icons.horizontalThreeDot}
+                  source={icons.heartFill}
                   style={styles.horizontalThreeDotIcon}
                 />
               </Pressable>
@@ -316,7 +316,7 @@ const SocialListScreen = () => {
                     onPresBlockBtn();
                     setActivePostId(null);
                   }}>
-                  <Image source={icons.blockIcon} style={styles.blockIcon} />
+                  <Image source={icons.heartFill} style={styles.blockIcon} />
                   <Text style={styles.blockText}>
                     {t('otheruserprofile.block')}
                   </Text>
@@ -326,7 +326,7 @@ const SocialListScreen = () => {
                   onPress={() =>
                     gotoReportUser(post?.user?.id, post?.user_type, post?.id)
                   }>
-                  <Image source={icons.reportIcon} style={styles.reportIcon} />
+                  <Image source={icons.heartFill} style={styles.reportIcon} />
                   <Text style={styles.reportText}>
                     {t('otheruserprofile.report')}
                   </Text>
@@ -342,14 +342,14 @@ const SocialListScreen = () => {
           <View style={styles.interactionRow}>
             <TouchableOpacity style={styles.iconRow} onPress={onPressLikeBtn}>
               <Image
-                source={post?.is_liked ? icons.LikeFillIcon : icons.likeIcon}
+                source={post?.is_liked ? icons.heartFill : icons.heartFill}
                 style={styles.likeicon}
               />
               <Text style={styles.countsText}>{post?.total_likes}</Text>
             </TouchableOpacity>
             <View style={styles.commentRow}>
               <Pressable onPress={toggleCommentSheet}>
-                <Image source={icons.commentIcon} style={styles.commentIcon} />
+                <Image source={icons.heartFill} style={styles.commentIcon} />
               </Pressable>
               <Text style={styles.countsText}>{post?.total_comments}</Text>
             </View>
@@ -778,7 +778,7 @@ const SocialListScreen = () => {
               }}>
               <Image
                 source={
-                  item.is_liked === true ? icons.LikeFillIcon : icons.likeIcon
+                  item.is_liked === true ? icons.heartFill : icons.heartFill
                 }
                 style={styles.commentLikeicon}
               />
@@ -984,7 +984,7 @@ const SocialListScreen = () => {
                       PickPhotos();
                     }}>
                     <Image
-                      source={icons.AttchmentIcon}
+                      source={icons.heartFill}
                       style={styles.AttchmentIcon}
                     />
                   </Pressable>
@@ -993,7 +993,7 @@ const SocialListScreen = () => {
                       PostComment(isPostIdForComment, replyingTo);
                     }}>
                     <Image
-                      source={icons.sendMessageIcon}
+                      source={icons.heartFill}
                       style={styles.sendMessageIcon}
                     />
                   </Pressable>

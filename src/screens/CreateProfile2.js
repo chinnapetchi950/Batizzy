@@ -25,7 +25,7 @@ import {BASE_URL} from '../helper/ApiConstant';
 import {showMessage} from 'react-native-flash-message';
 import FontFamily from '../helper/FontFamily';
 import Colors from '../helper/Colors';
-import {useLanguage} from '../context/LanguageContext';
+// import {useLanguage} from '../context/LanguageContext';
 
 const CreateProfile2 = () => {
   const navigation = useNavigation();
@@ -45,7 +45,7 @@ const CreateProfile2 = () => {
   const [experience, setExperience] = useState('');
   const [companySize, setCompanySize] = useState('');
   const [skills, setSkills] = useState([]);
-  const {selectedLanguage, changeLanguage} = useLanguage();
+  // const {selectedLanguage, changeLanguage} = useLanguage();
 
   const getSkillsData = async () => {
     await fetch(BASE_URL + 'skills', {
@@ -91,11 +91,11 @@ const CreateProfile2 = () => {
             isSelected && styles.selectedSkillContainer,
           ]}>
           <Text style={[styles.skillText, isSelected && styles.selectedText]}>
-            {selectedLanguage == 'fr' || item?.name_fr?.length > 18
+            {/* {selectedLanguage == 'fr' || item?.name_fr?.length > 18
               ? `${item?.name_fr?.slice(0, 18)}...`
               : selectedLanguage == 'de' || item?.name_de?.length > 18
               ? `${item?.name_de?.slice(0, 18)}...`
-              : `${item?.name?.slice(0, 30)}...`}
+              : `${item?.name?.slice(0, 30)}...`} */}
           </Text>
         </TouchableOpacity>
         {isSelected && (

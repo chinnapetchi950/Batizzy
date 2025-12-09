@@ -50,8 +50,8 @@ export const icons = {
   menu: require('../../assets/icons/menu.png'),
   menuActive: require('../../assets/icons/menu-active.png'),
 
-  social: require('../../assets/icons/tab2.png'),
-  marketPlace: require('../../assets/icons/tab4.png'),
+  //social: require('../../assets/icons/tab2.png'),
+  //marketPlace: require('../../assets/icons/tab4.png'),
 
   star: require('../../assets/icons/star.png'),
   pin: require('../../assets/icons/pin.png'),
@@ -71,23 +71,23 @@ export const icons = {
   helpQuestion: require('../../assets/icons/helpQuestion.png'),
   cameraIcon: require('../../assets/icons/cameraicon.png'),
 
-  reportIcon: require('../../assets/icons/reportIcon.png'),
-  blockIcon: require('../../assets/icons/blockIcon.png'),
+  //reportIcon: require('../../assets/icons/reportIcon.png'),
+  //blockIcon: require('../../assets/icons/blockIcon.png'),
 
-  LikeFillIcon: require('../../assets/icons/LikeFillIcon.png'),
-  likeIcon: require('../../assets/icons/likeIcon.png'),
-  commentIcon: require('../../assets/icons/commentIcon.png'),
-  horizontalThreeDot: require('../../assets/icons/horizontalThreeDot.png'),
-  AttchmentIcon: require('../../assets/icons/AttchmentIcon.png'),
-  sendMessageIcon: require('../../assets/icons/sendMessageIcon.png'),
+//  LikeFillIcon: require('../../assets/icons/LikeFillIcon.png'),
+  //likeIcon: require('../../assets/icons/likeIcon.png'),
+  //commentIcon: require('../../assets/icons/commentIcon.png'),
+  //horizontalThreeDot: require('../../assets/icons/horizontalThreeDot.png'),
+  //AttchmentIcon: require('../../assets/icons/AttchmentIcon.png'),
+  //sendMessageIcon: require('../../assets/icons/sendMessageIcon.png'),
 
-  ListingIcon: require('../../assets/icons/ListingIcon.png'),
-  FollowIcon: require('../../assets/icons/FollowIcon.png'),
+  //ListingIcon: require('../../assets/icons/ListingIcon.png'),
+  //FollowIcon: require('../../assets/icons/FollowIcon.png'),
 
-  france: require('../../assets/icons/france.png'),
-  english: require('../../assets/icons/english.png'),
-  german: require('../../assets/icons/german.png'),
+  // france: require('../../assets/icons/france.png'),
+  //english: require('../../assets/icons/english.png'),
+  // german: require('../../assets/icons/german.png'),
 
-  badgeIcon: require('../../assets/icons/badgeIcon.png'),
-  certified: require('../../assets/icons/certified.png'),
+  // badgeIcon: require('../../assets/icons/badgeIcon.png'),
+  //certified: require('../../assets/icons/certified.png'),
 };

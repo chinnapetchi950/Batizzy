@@ -32,7 +32,7 @@ import Colors from '../../helper/Colors';
 import FontFamily from '../../helper/FontFamily';
 import Input from '../../common/Input';
 import {BASE_URL, IMAGE_URL} from '../../helper/ApiConstant';
-import {useLanguage} from '../../context/LanguageContext';
+// import {useLanguage} from '../../context/LanguageContext';
 import Loader from '../../common/Loader';
 
 const NewListingScreen = () => {
@@ -60,7 +60,7 @@ const NewListingScreen = () => {
   const [isTitle, setTitle] = useState('');
   const [isPrice, setPrice] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const {selectedLanguage, changeLanguage} = useLanguage();
+  // const {selectedLanguage, changeLanguage} = useLanguage();
 
   const conditions = [
     {label: t('marketplace.new'), value: 'new'},

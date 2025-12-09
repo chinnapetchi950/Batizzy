@@ -31,7 +31,7 @@ import Icons from '../common/Icons';
 import FontFamily from '../helper/FontFamily';
 import LanguageData from '../i18n/LanguageData';
 import {CommonActions} from '@react-navigation/native';
-import {useLanguage} from '../context/LanguageContext';
+// import {useLanguage} from '../context/LanguageContext';
 
 const {height} = Dimensions.get('window');
 
@@ -46,7 +46,7 @@ const Login = () => {
   const [isPassword, setIsPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [storedLanguage, setStoredLanguage] = useState({});
-  const {selectedLanguage, changeLanguage} = useLanguage();
+  // const {selectedLanguage, changeLanguage} = useLanguage();
 
   const UserLogin = async () => {
     const deviceToken = await AsyncStorage.getItem('deviceToken');
@@ -131,7 +131,7 @@ const Login = () => {
   const onSelectLanguage = async (index, value, image, code) => {
     setStoredLanguage({image: image, text: value});
     await AsyncStorage.setItem('Language', JSON.stringify(code));
-    changeLanguage(code);
+    // changeLanguage(code);
     dropdownRef.current.hide();
   };
 
@@ -186,7 +186,7 @@ const Login = () => {
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <Image
                 resizeMode="contain"
-                source={storedLanguage?.image || icons.english}
+                source={storedLanguage?.image || icons.heartFill}
                 style={[styles.dropdownLang]}
               />
               <Text style={[styles.langText, {paddingLeft: 6}]}>

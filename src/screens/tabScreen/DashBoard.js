@@ -37,7 +37,7 @@ import Geolocation from '@react-native-community/geolocation';
 import FontFamily from '../../helper/FontFamily';
 import Icons from '../../common/Icons';
 import LanguageData from '../../i18n/LanguageData';
-import {useLanguage} from '../../context/LanguageContext';
+// import {useLanguage} from '../../context/LanguageContext';
 
 const DashBoard = () => {
   const dropdownRef = useRef();
@@ -48,7 +48,7 @@ const DashBoard = () => {
   const [code, setCode] = useState();
   const [userData, setUserData] = useState([]);
   const [storedLanguage, setStoredLanguage] = useState({});
-  const {selectedLanguage, changeLanguage} = useLanguage();
+  // const {selectedLanguage, changeLanguage} = useLanguage();
 
   const [isCommentSheetOpen, setIsCommentSheetOpen] = useState(false);
   const [search, setSearch] = useState('');
@@ -103,7 +103,7 @@ const DashBoard = () => {
   const getLanguageCode = async () => {
     var LanguageCode = JSON.parse(await AsyncStorage.getItem('Language'));
     setCode(LanguageCode);
-    changeLanguage(LanguageCode);
+    // changeLanguage(LanguageCode);
     if (LanguageCode != null) {
       updateLanguageCode(LanguageCode);
     }
@@ -161,7 +161,7 @@ const DashBoard = () => {
         const selectedCodeLang = LanguageData.find(
           lang => lang.code === response.data.data.lang,
         );
-        changeLanguage(selectedCodeLang?.code);
+        // changeLanguage(selectedCodeLang?.code);
         setStoredLanguage(selectedCodeLang);
       })
       .catch(error => {
@@ -505,7 +505,7 @@ const DashBoard = () => {
     setStoredLanguage({image: image, text: value});
     await AsyncStorage.setItem('Language', JSON.stringify(code));
     updateLanguageCode(code);
-    changeLanguage(code);
+    // changeLanguage(code);
     dropdownRef.current.hide();
   };
 
@@ -523,9 +523,9 @@ const DashBoard = () => {
               <View style={{flexDirection: 'row', justifyContent: 'center'}}>
                 <Text style={styles.title}>{t('Home.greeting') + ' '} </Text>
                 <Text style={[styles.title]}>
-                  {selectedLanguage != 'en' && userData?.name?.length > 6
+                  {/* {selectedLanguage != 'en' && userData?.name?.length > 6
                     ? `${userData.name.substring(0, 6)}...`
-                    : userData?.name}
+                    : userData?.name} */}
                 </Text>
               </View>
             </View>
@@ -573,7 +573,7 @@ const DashBoard = () => {
                   <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Image
                       resizeMode="contain"
-                      source={storedLanguage?.image || icons.english}
+                      source={storedLanguage?.image || icons.heartFill}
                       style={[styles.dropdownLang]}
                     />
                     <Text style={[styles.langText, {paddingLeft: 3}]}>
