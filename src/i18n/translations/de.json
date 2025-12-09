@@ -1,0 +1,584 @@
+{
+    "userApp":"user App",
+    "locationPermission": {
+        "title": "Standortberechtigung",
+        "message": "Wir benötigen Zugriff auf Ihren Standort, um besseren Service zu bieten.",
+        "buttonNeutral": "Später fragen",
+        "buttonNegative": "Abbrechen",
+        "buttonPositive": "OK"
+    },
+    "notification": {
+        "message": "Nachricht",
+        "renovationPostRequest": "Renovierungsanfrage",
+        "post": "Beitrag",
+        "postLike": "Beitrag gefällt mir",
+        "comment": "Kommentar",
+        "commentLike": "Kommentar gefällt mir",
+        "banner": "Banner",
+        "follow": "Folgen",
+        "socialFollow": "Soziales folgen",
+        "followRequest": "Folgeanfrage",
+        "postFollowRequest": "Beitragsfolgenanfrage"
+    },
+    "onboarding": {
+    "titles": [
+        "RENOVIERUNG SICHER GEMACHT",
+        "BAUMATERIALIEN KAUFEN UND VERKAUFEN",
+        "HILFE UND BERATUNG JEDERZEIT"
+    ],
+    "descriptions": [
+        "Suchen Sie nach einem Auftragnehmer in Ihrer Region,\n erhalten Sie Angebote, speichern Sie die Kommunikationshistorie\n um Betrug zu vermeiden",
+        "Listen Sie Ihre ungenutzten Baumaterialien,\n legen Sie den Preis fest und verkaufen Sie an die\n Batizzy-Community",
+        "Wissen Sie nicht, wie man Angebote vergleicht?\n Fragen Sie unser Team in einer Sekunde und treffen Sie nie wieder die falsche Renovierungswahl"
+    ],
+        "skip": "ÜBERSpringen",
+        "getStarted": "Loslegen"
+    },
+    "login": {
+        "title": "Anmelden",
+        "emailLabel": "E-Mail*",
+        "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+        "passwordLabel": "Passwort*",
+        "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+        "forgotPassword": "Passwort vergessen?",
+        "signInButton": "Anmelden",
+        "newUser": "Neuer Benutzer?",
+        "signUpLink": "Registrieren",
+        "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "emptyPassword": "Bitte geben Sie ein Passwort ein",
+        "successMessage": "Erfolgreich angemeldet!"
+    },
+    "language": {
+        "default": "Deutsch"
+    },
+    "common": {
+        "errorOccurred": "Ein Fehler ist aufgetreten"
+    },
+    "signup": {
+        "signup_title": "S'inscrire",
+        "signup_subtitle": "Erstellen Sie ein neues Konto",
+        "label_full_name": "Vollständiger Name",
+        "placeholder_full_name": "Geben Sie Ihren vollständigen Namen ein",
+        "label_phone_number": "Telefonnummer",
+        "placeholder_phone_number": "Geben Sie Ihre Telefonnummer ein",
+        "placeholder_search": "Suchen",
+        "label_email": "E-Mail",
+        "placeholder_email": "Geben Sie Ihre E-Mail ein",
+        "label_password": "Passwort",
+        "placeholder_password": "Geben Sie Ihr Passwort ein",
+        "label_confirm_password": "Passwort bestätigen",
+        "placeholder_confirm_password": "Bestätigen Sie Ihr Passwort",
+        "label_gender": "Geschlecht",
+        "label_gender_male": "Männlich",
+        "label_gender_female": "Weiblich",
+        "label_gender_others": "Andere",
+        "button_signup": "Registrieren",
+        "label_already_have_account": "Haben Sie bereits ein Konto?",
+        "button_signin": "Anmelden",
+        "error_full_name": "Geben Sie den vollständigen Namen ein",
+        "error_phone_number": "Bitte geben Sie eine gültige 10-stellige Telefonnummer ein.",
+        "error_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "error_password": "Das Passwort darf nicht leer sein.",
+        "error_password_strength": "Das Passwort muss mindestens einen Großbuchstaben, einen Kleinbuchstaben, eine Zahl und ein Sonderzeichen enthalten.",
+        "error_confirm_password": "Das Bestätigungspasswort darf nicht leer sein.",
+        "error_password_mismatch": "Passwort und Bestätigungspasswort stimmen nicht überein."  
+    },
+    "forgot_password": {
+        "title": "Passwort vergessen",
+        "description_text": "Geben Sie die registrierte E-Mail-Adresse ein, um Ihre Passwort-Reset-Informationen zu erhalten",
+        "label_email": "E-Mail*",
+        "placeholder_email": "Geben Sie Ihre E-Mail ein",
+        "button_reset_password": "Passwort zurücksetzen",
+        "label_sign_in": "Anmelden"
+    },
+    "home":{
+        "greeting": "Hallo",
+        "search": "Suche",
+        "requests": "Anfragen",
+        "suggestions": "Vorschläge",
+        "help": "Hilfe",
+        "subtitle": "Hervorhebung von Spitzenleistung und Engagement",
+        "betterHome": "Helfen Sie dabei, ein besseres Zuhause zu bauen",
+        "highlightText": "Hervorhebung von Spitzenleistungen und Engagement",
+        "viewButton": "Ansehen >>",
+        "governmentHelp": "Staatliche Renovierungshilfe",
+        "betterHomeHelp": "Wir helfen Ihnen, ein besseres Zuhause zu bauen",
+        "training": "Schulung",
+        "businessPartners": "Geschäftspartner",
+        "newRequests": "Neue Anfragen",
+        "viewAll": "Alle ansehen",
+        "contractorOfTheMonth": "Auftragnehmer des Monats"
+    },
+    "newListing": {
+        "title": "Neue Anzeige",
+        "publish": "Veröffentlichen",
+        "chooseMainPhoto": "Wählen Sie zuerst das Hauptfoto Ihrer Anzeige.",
+        "photos": "Fotos",
+        "productTitle": "Produktname",
+        "price": "Preis",
+        "category": "Kategorie",
+        "condition": "Zustand",
+        "description": "Beschreibung (Optional)",
+        "location": "Standort",
+        "edit": "Bearbeiten",
+        "reset": "Zurücksetzen",
+        "takePictures": "Fotos machen",
+        "selectPictures": "Fotos auswählen",
+        "marketplaceCreated": "Marktplatz erfolgreich erstellt.",
+        "ok": "OK",
+        "listingOnMarketplace": "Anzeige auf dem Marktplatz",
+        "addPhotos": "Fotos hinzufügen"
+    },
+    "categoryList": {
+        "title": "Kategorieliste",
+        "allCategories": "Alle Kategorien"
+    },
+    "marketplace": {
+        "addListing": "Auflistung hinzufügen",
+        "enterTitle": "Enter Title",
+        "enterPrice": "Preis eingeben",
+        "enterDescription": "Beschreibung eingeben",
+        "selectCategory": "Kategorie auswählen",
+        "selectCondition": "Bedingung auswählen",
+        "uploadPhotos": "otos hochladen",
+        "publishListing": "Listing veröffentlichen",
+        "title": "Marktplatz",
+        "viewAccountText": "Konto anzeigen",
+        "sell": "Verkaufen",
+        "category": "Kategorie",
+        "todaysPicks": "Die Picks von heute",
+        "searchListings": "Suche Listings",
+        "selectLocation": "Standort auswählen",
+        "filters": "Filter",
+        "reset": "Zurücksetzen",
+        "price": "Preis",
+        "minimum": "Mindest",
+        "maximum": "Maximal",
+        "apply": "Anwenden",
+        "myMarketplace": "Mein Marktplatz",
+        "followers": "Follower",
+        "following": "Folgt",
+        "activeListings": "Aktive Anzeigen",
+        "new": "Neu",
+        "old_like_new": "Gebraucht - Wie neu",
+        "used_good": "Gebraucht - Gut",
+        "used_fair": "Gebraucht - Befriedigend",
+        "pleaseUploadImages": "Bitte laden Sie Bilder hoch",
+        "pleaseEnterTitle": "Bitte geben Sie einen Titel ein",
+        "pleaseEnterPrice": "Bitte geben Sie den Preis ein",
+        "pleaseSelectCategory": "Bitte wählen Sie eine Kategorie",
+        "pleaseSelectCondition": "Bitte wählen Sie einen Zustand",
+        "userListings": "Anzeigen von"
+    },
+    "marketplaceAccount": {
+        "title": "Marktplatz-Konto",
+        "selling": "Verkaufen",
+        "yourListings": "Ihre Angebote",
+        "marketplaceFollowers": "Marktplatz-Follower",
+        "interests": "Interessen",
+        "following": "Folgen"
+    },
+    "marketplaceProfile": {
+        "title": "Marktplatz-Konto",
+        "editProfile": "Profil bearbeiten",
+        "shareToFeed": "In den Feed teilen",
+        "aboutMe": "Über mich",
+        "addDetails": "Details hinzufügen",
+        "addNumber": "Nummer hinzufügen",
+        "enterPhone": "Telefonnummer eingeben",
+        "addNumberInfo": "Wir fügen diese Nummer Ihrem Handelsprofil hinzu, damit Käufer Sie bezüglich Ihrer aktuellen oder zukünftigen Marktplatz-Angebote kontaktieren können.",
+        "yourListing": "Ihr Angebot",
+        "searchListings": "Angebote suchen"
+     },
+    "productdetails": {
+        "title": "Marktplatz",
+        "sendMessage": "Nachricht an den Verkäufer senden",
+        "messagePlaceholder": "Hallo, ist das noch verfügbar?",
+        "descriptionTitle": "Beschreibung",
+        "readMore": "Mehr lesen",
+        "readLess": "Weniger lesen",
+        "sellerInformation": "Verkäuferinformationen",
+        "sellerProfile": "Verkäuferprofil",
+        "follow": "Folgen",
+        "unfollow": "Entfolgen",
+        "details": "Details",
+        "condition": "Zustand",
+        "location": "Standort",
+        "similarListings": "Ähnliche Angebote von Verkäufern",
+        "joinedIn": "Beigetreten im"
+    },
+    "editLocation": {
+        "selectLocation": "Standort auswählen"
+    },
+    "itemBuy": {
+        "title": "Artikel kaufen",
+        "listOfItems": "Liste der Artikel"
+    },
+    "yourListing": {
+        "title": "Ihre Angebote",
+        "createListing": "Angebot erstellen",
+        "noDataFound": "Keine Daten gefunden",
+        "searchListings": "Angebote suchen"
+    },
+    "followerList": {
+        "title": "Follower-Liste",
+        "searchListings": "Angebote suchen",
+        "allFollowers": "Alle Follower",
+        "followRequests": "Follow-Anfragen"
+    },
+    "followingList": {
+        "title": "Folge-Liste",
+        "searchListings": "Angebote suchen",
+        "noDataFound": "Keine Daten gefunden",
+        "listing": "Anzeigen"
+    },
+    "createPost": {
+        "title": "Beitrag erstellen",
+        "saySomething": "Sag etwas...",
+        "gallery": "Galerie",
+        "photoVideo": "Foto / Video",
+        "pleaseEnterSomething": "Bitte etwas eingeben",
+        "noDataFound": "Keine Daten gefunden",
+        "max_photos_exceeded": "Sie können maximal 10 Fotos oder Videos hochladen."
+    },
+    "socialPostScreen": {
+        "greeting": "Hallo",
+        "placeholder": "Schreibe etwas hier!",
+        "addPost": "Beitrag hinzufügen",
+        "comments": "Kommentare",
+        "writeReply": "Schreibe eine Antwort...",
+        "addComment": "Füge einen Kommentar hinzu...",
+        "imageLimitExceeded": "Sie können nur bis zu 10 Bilder hochladen.",
+        "image": "Bild"
+    },
+    "otheruserprofile": {
+        "followers": "Follower",
+        "following": "Folge",
+        "follow": "Folgen",
+        "message": "Nachricht",
+        "noPostFound": "Kein Beitrag gefunden",
+        "posts": "Beiträge",
+        "comments": "Kommentare",
+        "writeAReply": "Eine Antwort schreiben...",
+        "addAComment": "Einen Kommentar hinzufügen",
+        "mySocial": "Mein Netzwerk",
+        "block": "Blockieren",
+        "report": "Melden",
+        "remove": "Entfernen"
+    },
+    "socialAllFollowingList": {
+        "followersList": "Follower-Liste",
+        "searchListings": "Angebote suchen",
+        "followers": "Follower",
+        "following": "Folgen",
+        "followRequests": "Follow-Anfragen"
+    },
+    "socialFollowersList": {
+        "noDataFound": "Keine Daten gefunden",
+        "message": "Nachricht",
+        "menu": "⋮",
+        "confirm": "Bestätigen",
+        "delete": "Löschen"
+    },
+    "changeLocation": {
+        "selectLocation": "Standort auswählen"
+    },
+    "postrequest": {
+        "title": "Anfrage posten",
+        "requestProfessionalHelp": "Professionelle Hilfe anfordern",
+        "titleForRenovationPost": "Title for Renovation Post",
+        "renovationPostTitle": "Titel der Renovierungsanfrage",
+        "typeOfRenovation": "Renovierungsart",
+        "renovationTypes": "Wählen Sie den Renovierungstyp",
+        "budget": "Budget",
+        "scopeOfWork": "Arbeitsumfang",
+        "preferredTimeline": "Bevorzugter Zeitrahmen",
+        "experienceLevel": "Erfahrungsstufe",
+        "skillsRequiredForYourWork": "Für Ihre Arbeit erforderliche Fähigkeiten",
+        "uploadAttachments": "Anhänge hochladen",
+        "uploadAndAttachFiles": "Laden Sie Dateien oder Bilder hoch, die mit dem Renovierungsprojekt zu tun haben",
+        "chooseMainPhoto": "Wählen Sie zuerst das Hauptfoto Ihrer Anzeige.",
+        "photos": "Fotos",
+        "location": "Standort",
+        "edit": "Bearbeiten",
+        "agreement": "Vereinbarung",
+        "agreeText": "Durch die Einreichung dieses Formulars erkläre ich mich damit einverstanden, dass die angegebenen Informationen nach bestem Wissen korrekt sind. Ich verstehe, dass eine Vor-Ort-Bewertung erforderlich sein kann, bevor ein endgültiges Angebot abgegeben wird.",
+        "publish": "Veröffentlichen",
+        "next": "Weiter",
+        "enterTitle": "Bitte Titel eingeben",
+        "selectRenovationType": "Renovierungstyp auswählen",
+        "enterBudget": "Bitte Budget eingeben",
+        "selectScope": "Bereich auswählen",
+        "selectTimeline": "Zeitrahmen auswählen",
+        "selectExperienceLevel": "Erfahrungsstufe auswählen",
+        "selectSkills": "Fähigkeiten auswählen",
+        "describeWhatYouNeed": "Beschreiben Sie, was Sie brauchen",
+        "description": "Beschreibung",
+        "selectLocation": "Standort auswählen",
+        "uploadLimitExceeded": "Sie können nur bis zu 10 Bilder hochladen.",
+        "skillsRequired": "Für Ihre Arbeit erforderliche Fähigkeiten",
+        "skills": "Fähigkeiten",
+        "bestResults": "Für beste Ergebnisse fügen Sie 3-5 Fähigkeiten hinzu",
+        "popularSkills": "Beliebte Fähigkeiten",
+        "apply": "Bewerben",
+        "takePictures": "Bilder machen",
+        "selectPictures": "Bilder auswählen",
+        "whatHappensAfterPost": "Was passiert, nachdem Sie Ihre Renovierungsanfrage gepostet haben?",
+        "receiveProposals": "Sie erhalten Vorschläge und können Arbeiter für Ihren Job einladen.",
+        "postRequest": "Anfrage posten",
+        "editRequest": "Anfrage bearbeiten",
+        "skillsRequiredpl":"Erforderliche Fähigkeiten",
+        "scopes": {
+            "small": "Klein",
+            "smallSubTitle": "Schnelle und einfache Aufgaben",
+            "medium": "Mittel",
+            "mediumSubTitle": "Schnelle und einfache Aufgaben",
+            "large": "Groß",
+            "largeSubTitle": "Schnelle und einfache Aufgaben"
+        },
+        "experience": {
+            "entry": "Einsteiger",
+            "entrySubTitle": "(0 - 2 Jahre)",
+            "intermediate": "Mittelstufe",
+            "intermediateSubTitle": "(2 - 5 Jahre)",
+            "expert": "Experte",
+            "expertSubTitle": "(5 + Jahre)"
+        },
+        "timeLine": {
+            "moreThan6Months": "Mehr als 6 Monate",
+            "threeToSixMonths": "3 bis 6 Monate",
+            "oneToThreeMonths": "1 bis 3 Monate"
+        },
+        "validation": {
+            "enterDescription": "Bitte geben Sie eine Beschreibung ein",
+            "uploadImages": "Bitte laden Sie Bilder hoch"
+        }
+    },
+    "myRequestDetails": {
+        "details": "Details",
+        "experienceLevel": "Erfahrungsstufe:",
+        "estimatedBudget": "Geschätztes Budget:",
+        "timeline": "Zeitrahmen:",
+        "servicesRequired": "Erforderliche Dienstleistungen",
+        "requestStatus": "Anfrage {{status}}",
+        "services": "Dienstleistungen:"
+    },
+    "newRequestDetails": {
+        "details": "Details",
+        "requestId": "Anfragen-ID:",
+        "viewProfile": "Profil anzeigen",
+        "contractor": "Auftragnehmer:",
+        "estimatedBudget": "Geschätztes Budget:",
+        "timeline": "Zeitrahmen:",
+        "servicesRequired": "Erforderliche Dienstleistungen:",
+        "detailsLabel": "Details:",
+        "accept": "Akzeptieren",
+        "decline": "Ablehnen",
+        "workerProfileDetails": "Arbeiterprofil-Details",
+        "name": "Name:",
+        "email": "E-Mail:",
+        "phone": "Telefon:",
+        "location": "Standort:"
+    },
+    "proposalAcceptedScreen": {
+        "message": "Sie haben den Vorschlag akzeptiert.",
+        "contractor": "Auftragnehmer:",
+        "estimatedBudget": "Geschätztes Budget:",
+        "timeline": "Zeitrahmen:",
+        "backButton": "Zurück"
+    },
+    "chatScreen": {
+        "noChatsFound": "Keine Chats gefunden",
+        "inbox": "Posteingang",
+        "unread": "Ungelesen",
+        "unreadCount": "Ungelesen",
+        "chatHeader": "Chat"
+    },
+    "inboxScreen": {
+        "noChatsFound": "Keine Chats gefunden",
+        "searchPlaceholder": "Hier suchen"
+    },
+    "messageScreen": {
+        "noChatsFound": "Keine Chats gefunden",
+        "typeHere": "Hier tippen"
+    },
+    "editProfile": {
+        "editProfileTitle": "Profil bearbeiten",
+        "firstName": "Vorname",
+        "phoneNo": "Telefonnummer",
+        "enterName": "Name eingeben",
+        "enterNumber": "Nummer eingeben",
+        "updateNow": "Jetzt aktualisieren",
+        "selectOption": "Option auswählen",
+        "selectFromCamera": "Aus der Kamera auswählen",
+        "selectFromGallery": "Aus der Galerie auswählen",
+        "search": "Suchen.."
+    },
+    "aboutScreen": {
+        "aboutUs": "Über uns"
+    },
+    "helpScreen": {
+        "helpCenter": "Hilfezentrum",
+        "getInTouch": "Bitte nehmen Sie Kontakt mit uns auf, und wir helfen Ihnen gerne weiter!",
+        "issueWithServices": "Haben Sie ein Problem mit unseren Dienstleistungen?",
+        "issueRelatedTo": "Problem im Zusammenhang mit",
+        "category": "Kategorie",
+        "selectOption": "Wählen Sie die Option",
+        "writeYourComment": "Schreiben Sie Ihren Kommentar...",
+        "submit": "Absenden",
+        "getMoreHelp": "Oder mehr Hilfe erhalten",
+        "connectWithUs": "Verbinden Sie sich mit uns auf!",
+        "contactPhone": "+32 6563256325",
+        "contactEmail": "cs@support.com",
+        "selectYourIssue": "Wählen Sie Ihr Problem",
+        "selectYourOption": "Wählen Sie Ihre Option"
+    },
+    "settings": {
+        "settings": "Einstellungen",
+        "general": "Allgemein",
+        "change_language": "Sprache ändern",
+        "change_password": "Passwort ändern",
+        "delete_account": "Konto löschen",
+        "terms_conditions": "Allgemeine Geschäftsbedingungen",
+        "privacy_policy": "Datenschutzerklärung",
+        "cancellation_policy": "Stornierungsrichtlinie",
+        "aboutUs": "Über uns",
+        "requests": "Anfragen",
+        "chat": "Chat",
+        "helpCenter": "Hilfezentrum",
+        "notification": "Benachrichtigung",
+        "logoutConfirmation": {
+            "message": "Möchten Sie sich wirklich abmelden?",
+            "no": "Nein",
+            "yes": "Ja",
+            "logout": "Abmelden"
+        }
+    },
+    "blogDetail": {
+        "no_chats_found": "Keine Chats gefunden",
+        "hello_text": "Hallo"
+    },
+    "requestStatus": {
+        "accepted": "Akzeptiert",
+        "completed": "Abgeschlossen",
+        "decline": "Ablehnen"
+    }, 
+    "acceptedRequestDetails": {
+        "details": "Details",
+        "requestID": "Anforderungs-ID: ",
+        "contractor": "Auftragnehmer: ",
+        "estimatedBudget": "Geschätztes Budget: ",
+        "timeline": "Zeitplan: ",
+        "servicesRequired": "Erforderliche Dienstleistungen:",
+        "detailsLabel": "Details: ",
+        "requestStatus": "Anforderungsstatus ",
+        "workerProfile": "Arbeiterprofil Details",
+        "name": "Name: ",
+        "email": "E-Mail: ",
+        "phone": "Telefon: ",
+        "location": "Standort: "
+    },
+    "completedState": {
+        "details": "Details",
+        "viewProfile": "Profil anzeigen",
+        "contractor": "Auftragnehmer",
+        "estimatedBudget": "Geschätztes Budget",
+        "timeline": "Zeitplan",
+        "servicesRequired": "Erforderliche Dienstleistungen:",
+        "detailsLabel": "Details :",
+        "status": "Anforderungsstatus",
+        "addReview": "Bewertung hinzufügen",
+        "typeHere": "Hier eingeben...",
+        "send": "Senden"
+    },
+    "declinedetails": {
+        "details": "Details",
+        "requestId": "Anforderungs-ID",
+        "viewProfile": "Profil anzeigen",
+        "contractor": "Auftragnehmer",
+        "estimatedBudget": "Geschätztes Budget",
+        "timeline": "Zeitplan",
+        "servicesRequired": "Erforderliche Dienstleistungen",
+        "detailsLabel": "Details",
+        "addReview": "Bewertung hinzufügen"
+    }, 
+    "suggestionscreen": {
+        "header": "Vorschläge",
+        "smartSuggestions": "Smarter Vorschläge, um Ihren nächsten Schritt zu leiten!",
+        "faqDesc": "Finden Sie alles, was Sie in unseren FAQs benötigen",
+        "faqTitle": "Häufige Fragen (FAQs)",
+        "noRecordFound": "Datensatz nicht gefunden"
+    },
+    "businesspartnerscreen": {
+        "header": "Geschäftspartner"
+    },
+    "govhelp": {
+        "header": "Hilfe bei Regierungsrenovierungen",
+        "description": "Hier bietet die Regierung verschiedene Arten von staatlicher Unterstützung für Hausrenovierungen an, einschließlich:"
+    },
+    "helpList": {
+        "header": "Probleme",
+        "servicesType": "Dienstleistungsart : ",
+        "issue": "Problem : ",
+        "status": "Status",
+        "recordNotFound": "Datensatz nicht gefunden"
+    },
+    "changePassword": {
+        "header": "Passwort ändern",
+        "currentPassword": "Aktuelles Passwort",
+        "newPassword": "Neues Passwort",
+        "reEnterNewPassword": "Neues Passwort erneut eingeben",
+        "enterCurrentPassword": "Aktuelles Passwort eingeben",
+        "enterNewPassword": "Neues Passwort eingeben",
+        "enterReNewPassword": "Neues Passwort erneut eingeben",
+        "changePassword": "Passwort ändern",
+        "enterPassword": "Passwort eingeben"
+    },
+    "deleteAccount": {
+        "header": "Konto löschen",
+        "confirmationMessage": "Sind Sie sicher, dass Sie dieses Konto löschen möchten?",
+        "irreversibleMessage": "• Die Kontolöschung ist irreversibel.",
+        "accessMessage": "• Sie werden keinen Zugriff mehr auf Ihre gespeicherten Profildaten und Bewertungen haben.",
+        "keepAccount": "Konto behalten",
+        "deleteAccount": "Konto löschen",
+        "dialogTitle": "Konto löschen",
+        "dialogDescription": "Möchten Sie dieses Konto löschen? Sie können diese Aktion nicht rückgängig machen.",
+        "cancel": "Abbrechen",
+        "delete": "Löschen"
+    },  
+    "notificationScreen": {
+        "header": "Benachrichtigungen",
+        "noRecordFound": "Datensatz nicht gefunden",
+        "deleteMessage": "Löschen",
+        "deleteSuccess": "Benachrichtigung erfolgreich gelöscht",
+        "readSuccess": "Benachrichtigung als gelesen markiert"
+    },
+    "notificationListScreen": {
+        "title": "Benachrichtigung",
+        "emptyMessage": "Kein Eintrag gefunden"
+    },
+    "universalSearch": {
+        "universalSearch": "Globale Suche hier",
+        "search": "Suche",
+        "socialProfile": "Soziales Profil",
+        "marketplaceProfile": "Marktplatz-Profil"
+    },
+    "request":{
+        "requests": "Anfragen",
+        "placeholder": "Hier suchen",
+        "myRequests": "Meine Anfragen",
+         "newRequests": "Neue Anfragen",
+        "requestsStatus": "Anfragestatus",
+        "deleteRequest": "Anfrage löschen",
+        "deleteRequestConfirmation": "Sind Sie sicher, dass Sie diese Anfrage löschen möchten?"    
+    },
+    "training":{
+        "title": "Schulung",
+        "contractorOfMonth": "Top-bewertete Auftragnehmer"
+    },
+    "error_generic": "Interner Serverfehler",
+    "recordNotFound": "Kein Eintrag gefunden",
+    "locationNotfound": "Standort nicht gefunden",
+    "no_internet_title": "Kein Internet",
+    "no_internet_message": "Sie sind offline. Bitte überprüfen Sie Ihre Verbindung."
+}

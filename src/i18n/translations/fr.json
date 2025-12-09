@@ -1,0 +1,585 @@
+{
+  "userApp":"user App",
+  "locationPermission": {
+    "title": "Autorisation de localisation",
+    "message": "Nous avons besoin d’accéder à votre emplacement pour fournir de meilleurs services.",
+    "buttonNeutral": "Demandez-moi plus tard",
+    "buttonNegative": "Annuler",
+    "buttonPositive": "Ok"
+   },
+  "notification": {
+    "message": "Message",
+    "renovationPostRequest": "Demande de poste de rénovation",
+    "post": "Poste",
+    "postLike": "Poster J'aime",
+    "comment": "Commentaire",
+    "commentLike": "Commentaire J'aime",
+    "banner": "Bannière",
+    "follow": "Suivre",
+    "socialFollow": "Suivi social",
+    "followRequest": "Suivre la demande",
+    "postFollowRequest": "Demande de suivi de publication"
+  },
+  "onboarding": {
+    "titles": [
+    "UNE RÉNOVATION SÉCURISÉE",
+    "VENDRE ET ACHETER DES MATÉRIAUX DE CONSTRUCTION",
+    "AIDE ET CONSEILS À TOUT MOMENT"
+    ],
+    "descriptions": [
+    "Recherchez un entrepreneur dans votre région,\n obtenez des devis, conservez l'historique des communications\npour éviter la fraude",
+    "Listez vos matériaux de construction inutilisés,\nfixez le prix et vendez à la\ncommunauté Batizzy",
+    "Vous ne savez pas comment comparer les devis ?\n Demandez à notre équipe en une seconde et ne faites jamais le mauvais choix de rénovation."
+    ],
+    "skip": "SAUTER",
+    "getStarted": "Commencer"
+  },
+  "login": {
+    "title": "Se connecter",
+    "emailLabel": "E-mail*",
+    "emailPlaceholder": "Entrez votre email",
+    "passwordLabel": "Mot de passe*",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "signInButton": "Se connecter",
+    "newUser": "Nouvel utilisateur ?",
+    "signUpLink": "S'inscrire",
+    "invalidEmail": "Veuillez entrer un e-mail valide",
+    "emptyPassword": "Veuillez entrer le mot de passe",
+    "successMessage": "Connexion réussie !"
+  },
+  "language": {
+    "default": "English"
+  },
+  "common": {
+    "errorOccurred": "Une erreur s'est produite"
+  },
+  "signup": {
+    "signup_title": "S'inscrire",
+    "signup_subtitle": "Créer un nouveau compte",
+    "label_full_name": "Nom et prénom",
+    "placeholder_full_name": "Entrez votre nom complet",
+    "label_phone_number": "Numéro de téléphone",
+    "placeholder_phone_number": "Entrez votre numéro de téléphone",
+    "placeholder_search": "Recherche",
+    "label_email": "E-mail",
+    "placeholder_email": "Entrez votre email",
+    "label_password": "Mot de passe",
+    "placeholder_password": "Entrez votre mot de passe",
+    "label_confirm_password": "Confirmez le mot de passe",
+    "placeholder_confirm_password": "Confirmez votre mot de passe",
+    "label_gender": "Genre",
+    "label_gender_male": "Mâle",
+    "label_gender_female": "Femelle",
+    "label_gender_others": "Autres",
+    "button_signup": "S'inscrire",
+    "label_already_have_account": "Vous avez déjà un compte ?",
+    "button_signin": "Se connecter",
+    "error_full_name": "Entrez le nom complet",
+    "error_phone_number": "Veuillez entrer un numéro de téléphone valide de 10 chiffres.",
+    "error_email": "Veuillez entrer une adresse e-mail valide.",
+    "error_password": "Le mot de passe ne peut pas être vide.",
+    "error_password_strength": "Le mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial.",
+    "error_confirm_password": "Le mot de passe de confirmation ne peut pas être vide.",
+    "error_password_mismatch": "Le mot de passe et le mot de passe de confirmation ne correspondent pas."
+  },
+  "forgot_password": {
+    "title": "Forgot Password",
+    "description_text": "Entrez l'adresse e-mail enregistrée pour obtenir les informations de réinitialisation de votre mot de passe",
+    "label_email": "E-mail*",
+    "placeholder_email": "Entrez votre email",
+    "button_reset_password": "Réinitialiser le mot de passe",
+    "label_sign_in": "Se connecter"
+  },
+  "home":{
+    "greeting": "Bonjour",
+    "search": "Rechercher",
+    "requests": "Demandes",
+    "suggestions": "Suggestions",
+    "help": "Aide",
+    "subtitle": "Mettre en avant les performances et le dévouement",
+    "betterHome": "Vous aider à construire une meilleure maison",
+    "highlightText": "Mettre en avant les performances et le dévouement",
+    "viewButton": "Voir >>",
+    "governmentHelp": "Aide à la rénovation gouvernementale",
+    "betterHomeHelp": "Vous aider à construire une meilleure maison",
+    "training": "Formation",
+    "businessPartners": "Partenaires commerciaux",
+    "newRequests": "Nouvelles demandes",
+    "viewAll": "Tout voir",
+    "contractorOfTheMonth": "Entrepreneur du mois"
+  },
+  "newListing": {
+    "title": "Nouvelle annonce",
+    "publish": "Publier",
+    "chooseMainPhoto": "Choisissez d'abord la photo principale de votre annonce.",
+    "photos": "Photos",
+    "productTitle": "Titre du produit",
+    "price": "Prix",
+    "category": "Catégorie",
+    "condition": "Condition",
+    "description": "Description (facultatif)",
+    "location": "Emplacement",
+    "edit": "Modifier",
+    "reset": "Réinitialiser",
+    "takePictures": "Prendre des photos",
+    "selectPictures": "Sélectionnez des images",
+    "marketplaceCreated": "Place de marché créée avec succès.",
+    "ok": "OK",
+    "listingOnMarketplace":"Inscription sur Marketplace",
+    "addPhotos":"Ajouter des photos"
+  },
+  "categoryList": {
+    "title": "Liste des catégories",
+    "allCategories": "Toutes les catégories"
+  },
+  "marketplace": {
+    "addListing": "Ajouter une annonce",
+    "enterTitle": "Entrez le titre",
+    "enterPrice": "Veuillez entrer un prix",
+    "enterDescription": "Entrez la description",
+    "selectCategory": "Sélectionnez une catégorie",
+    "selectCondition": "Sélectionner une condition",
+    "uploadPhotos": "Télécharger des photos",
+    "publishListing": "Publier l'annonce",
+    "title": "Marché",
+    "viewAccountText": "Voir le compte",
+    "sell": "Vendre",
+    "category": "Catégorie",
+    "todaysPicks": "Les sélections du jour",
+    "searchListings": "Rechercher des annonces",
+    "selectLocation": "Sélectionner l'emplacement",
+    "filters": "Filtres",
+    "reset": "Réinitialiser",
+    "price": "Prix",
+    "minimum": "Minimum",
+    "maximum": "Maximum",
+    "apply": "Appliquer",
+    "myMarketplace": "Mon marché",
+    "followers": "Abonnés",
+    "following": "Abonnements",
+    "activeListings": "Annonces actives",
+    "new": "Neuf",
+    "old_like_new": "D'occasion - Comme neuf",
+    "used_good": "D'occasion - Bon état",
+    "used_fair": "D'occasion - État moyen",
+    "pleaseUploadImages": "Veuillez télécharger des images",
+    "pleaseEnterTitle": "Veuillez entrer un titre",
+    "pleaseEnterPrice": "Veuillez entrer le prix",
+    "pleaseSelectCategory": "Veuillez sélectionner une catégorie",
+    "pleaseSelectCondition": "Veuillez sélectionner une condition",
+    "userListings": "Annonces de"
+  },
+  "marketplaceAccount": {
+    "title": "Compte Marketplace",
+    "selling": "Vente",
+    "yourListings": "Vos annonces",
+    "marketplaceFollowers": "Abonnés du marché",
+    "interests": "Intérêts",
+    "following": "Following"
+  },
+  "marketplaceProfile": {
+    "title": "Marketplace Account",
+    "editProfile": "Modifier le profil",
+    "shareToFeed": "Partager sur le fil",
+    "aboutMe": "À propos de moi",
+    "addDetails": "Ajouter des détails",
+    "addNumber": "Ajouter un numéro",
+    "enterPhone": "Entrer le numéro de téléphone",
+    "addNumberInfo": "Nous ajouterons ce numéro à votre profil commercial afin que les acheteurs puissent vous contacter à propos de vos annonces actuelles ou futures sur le marketplace.",
+    "yourListing": "Votre annonce",
+    "searchListings": "Rechercher des annonces"
+  },
+  "productdetails": {
+    "title": "Marketplace",
+    "sendMessage": "Envoyer un message au vendeur",
+    "messagePlaceholder": "Salut, est-ce toujours disponible ?",
+    "descriptionTitle": "Description",
+    "readMore": "Lire la suite",
+    "readLess": "Lire moins",
+    "sellerInformation": "Informations sur le vendeur",
+    "sellerProfile": "Profil du vendeur",
+    "follow": "Suivre",
+    "unfollow": "Ne plus suivre",
+    "details": "Détails",
+    "condition": "État",
+    "location": "Lieu",
+    "similarListings": "Annonces similaires des vendeurs",
+    "joinedIn": "Rejoint en"
+
+  },
+  "editLocation": {
+    "selectLocation": "Sélectionnez un emplacement"
+  },
+  "itemBuy": {
+    "title": "Article Acheter",
+    "listOfItems": "Liste des articles"
+  },
+  "yourListing": {
+   "title": "Your Listings",
+    "createListing": "Créer une annonce",
+    "noDataFound": "Aucune donnée trouvée",
+    "searchListings": "Rechercher des annonces"
+  },
+  "followerList": {
+    "title": "Followers List",
+    "searchListings": "Rechercher des annonces",
+    "allFollowers": "Tous les abonnés",
+    "followRequests": "Demandes de suivi"
+  },
+  "followingList": {
+    "title": "Following List",
+    "searchListings": "Rechercher des annonces",
+    "noDataFound": "Aucune donnée trouvée",
+    "listing": "Annonces"
+  },
+  "createPost": {
+    "title": "Créer une Publication",
+    "saySomething": "Dites quelque chose...",
+    "gallery": "Galerie",
+    "photoVideo": "Photo / Vidéo",
+    "pleaseEnterSomething": "Veuillez entrer quelque chose",
+    "noDataFound": "Aucune donnée trouvée",
+    "max_photos_exceeded": "Vous pouvez télécharger un maximum de 10 photos ou vidéos."
+  },
+  "socialPostScreen": {
+    "greeting": "Salut",
+    "placeholder": "Écrivez quelque chose ici !",
+    "addPost": "Ajouter une publication",
+    "comments": "Commentaires",
+    "writeReply": "Écrire une réponse...",
+    "addComment": "Ajouter un commentaire...",
+    "imageLimitExceeded": "Vous ne pouvez télécharger que 10 images maximum.",
+    "image": "Image"
+},
+  "otheruserprofile": {
+    "followers": "Abonnés",
+    "following": "Abonnement",
+    "follow": "Suivre",
+    "message": "Message",
+    "noPostFound": "Aucun post trouvé",
+    "posts": "posts de",
+    "comments": "Commentaires",
+    "writeAReply": "Écrire une réponse...",
+    "addAComment": "Ajouter un commentaire...",
+    "mySocial": "Mon Réseau",
+    "block": "Bloquer",
+    "report": "Signaler",
+    "remove": "Supprimer"
+  },
+  "socialAllFollowingList": {
+    "followersList": "Liste des abonnés",
+    "searchListings": "Rechercher des annonces",
+    "followers": "Abonnés",
+    "following": "Abonnement",
+    "followRequests": "Demandes de suivi"
+  },
+  "socialFollowersList": {
+    "noDataFound": "Aucune donnée trouvée",
+    "message": "Message",
+    "menu": "⋮",
+    "confirm": "Confirmer",
+    "delete": "Supprimer"
+  },
+  "changeLocation": {
+    "selectLocation": "Sélectionner un emplacement"
+  },
+  "postrequest": {
+    "title": "Demande de publication",
+    "requestProfessionalHelp": "Demander de l'aide professionnelle",
+    "titleForRenovationPost": "Titre de la demande de rénovation",
+    "renovationPostTitle": "Titre de la demande de rénovation",
+    "typeOfRenovation": "Type de rénovation",
+    "renovationTypes": "Sélectionner le type de rénovation",
+    "budget": "Budget",
+    "scopeOfWork": "Périmètre des travaux",
+    "preferredTimeline": "Calendrier préféré",
+    "experienceLevel": "Niveau d'expérience",
+    "skillsRequiredForYourWork": "Compétences requises pour votre travail",
+    "uploadAttachments": "Télécharger des pièces jointes",
+    "uploadAndAttachFiles": "Téléchargez et joignez des fichiers ou des images liés au projet de rénovation",
+    "chooseMainPhoto": "Choisissez d'abord la photo principale de votre annonce.",
+    "photos": "Photos",
+    "location": "Emplacement",
+    "edit": "Modifier",
+    "agreement": "Accord",
+    "agreeText": "En soumettant ce formulaire, j'accepte que les informations fournies soient exactes au mieux de ma connaissance. Je comprends qu'une évaluation sur site peut être requise avant qu'un devis final ne soit fourni.",
+    "publish": "Publier",
+    "next": "Suivant",
+    "enterTitle": "Veuillez entrer un titre",
+    "selectRenovationType": "Veuillez sélectionner le type de rénovation",
+    "enterBudget": "Veuillez entrer un budget",
+    "selectScope": "Veuillez sélectionner le périmètre",
+    "selectTimeline": "Veuillez sélectionner le calendrier",
+    "selectExperienceLevel": "Veuillez sélectionner le niveau d'expérience",
+    "selectSkills": "Veuillez sélectionner les compétences",
+    "describeWhatYouNeed": "Décrivez ce dont vous avez besoin",
+    "description": "Description",
+    "selectLocation": "Sélectionner un emplacement",
+    "uploadLimitExceeded": "Vous pouvez télécharger jusqu'à 10 images uniquement.",
+    "skillsRequired": "Compétences requises pour votre travail",
+    "skills": "Compétences",
+    "bestResults": "Pour de meilleurs résultats, ajoutez 3 à 5 compétences",
+    "popularSkills": "Compétences populaires",
+    "apply": "Appliquer",
+    "takePictures": "Prendre des photos",
+    "selectPictures": "Sélectionner des photos",
+    "whatHappensAfterPost": "Que se passe-t-il après avoir publié votre demande de rénovation ?",
+    "receiveProposals": "Vous recevrez des propositions et vous pourrez inviter des travailleurs pour votre travail.",
+    "postRequest": "Publier la demande",
+    "editRequest": "Modifier la demande",
+    "skillsRequiredpl":"Compétences requises",
+    "scopes": {
+      "small": "Petit",
+      "smallSubTitle": "Tâches rapides et simples",
+      "medium": "Moyen",
+      "mediumSubTitle": "Tâches rapides et simples",
+      "large": "Grand",
+      "largeSubTitle": "Tâches rapides et simples"
+    },
+    "experience": {
+      "entry": "Débutant",
+      "entrySubTitle": "(0 - 2 ans)",
+      "intermediate": "Intermédiaire",
+      "intermediateSubTitle": "(2 - 5 ans)",
+      "expert": "Expert",
+      "expertSubTitle": "(5 + ans)"
+    },
+    "timeLine": {
+      "moreThan6Months": "Plus de 6 mois",
+      "threeToSixMonths": "3 à 6 mois",
+      "oneToThreeMonths": "1 à 3 mois"
+    },
+    "validation": {
+      "enterDescription": "Veuillez saisir une description",
+      "uploadImages": "Veuillez télécharger des images"
+    }
+  },
+  "myRequestDetails": {
+    "details": "Détails",
+    "experienceLevel": "Niveau d'expérience :",
+    "estimatedBudget": "Budget estimé :",
+    "timeline": "Calendrier :",
+    "servicesRequired": "Services requis",
+    "requestStatus": "Demande {{status}}",
+    "services": "Services :"
+  },
+  "newRequestDetails": {
+    "details": "Détails",
+    "requestId": "ID de la demande :",
+    "viewProfile": "Voir le profil",
+    "contractor": "Entrepreneur :",
+    "estimatedBudget": "Budget estimé :",
+    "timeline": "Calendrier :",
+    "servicesRequired": "Services requis :",
+    "detailsLabel": "Détails :",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "workerProfileDetails": "Détails du profil du travailleur",
+    "name": "Nom :",
+    "email": "Email :",
+    "phone": "Téléphone :",
+    "location": "Emplacement :"
+  },
+  "proposalAcceptedScreen": {
+    "message": "Vous avez accepté la proposition.",
+    "contractor": "Entrepreneur : ",
+    "estimatedBudget": "Budget estimé : ",
+    "timeline": "Calendrier : ",
+    "backButton": "Retour"
+  },
+  "chatScreen": {
+    "noChatsFound": "Aucun chat trouvé",
+    "inbox": "Boîte de réception",
+    "unread": "Non lu",
+    "unreadCount": "Non lu",
+    "chatHeader": "Chat"
+  },
+  "inboxScreen": {
+    "noChatsFound": "Aucun chat trouvé",
+    "searchPlaceholder": "Rechercher ici"
+  },
+  "messageScreen": {
+    "noChatsFound": "Aucun chat trouvé",
+    "typeHere": "Tapez ici"
+  },
+  "editProfile": {
+    "editProfileTitle": "Modifier le profil",
+    "firstName": "Prénom",
+    "phoneNo": "Numéro de téléphone",
+    "enterName": "Entrez le nom",
+    "enterNumber": "Entrez le numéro",
+    "updateNow": "Mettre à jour maintenant",
+    "selectOption": "Sélectionner une option",
+    "selectFromCamera": "Sélectionner depuis la caméra",
+    "selectFromGallery": "Sélectionner depuis la galerie",
+    "search": "Rechercher..."
+  },
+  "aboutScreen": {
+    "aboutUs": "À propos de nous"
+  },
+  "helpScreen": {
+    "helpCenter": "Centre d'aide",
+    "getInTouch": "Veuillez nous contacter et nous serons heureux de vous aider !",
+    "issueWithServices": "Un problème avec nos services ?",
+    "issueRelatedTo": "Problème lié à",
+    "category": "Catégorie",
+    "selectOption": "Sélectionner l'option",
+    "writeYourComment": "Écrivez votre commentaire...",
+    "submit": "Soumettre",
+    "getMoreHelp": "Ou obtenez plus d'aide",
+    "connectWithUs": "Connectez-vous avec nous sur !",
+    "contactPhone": "+32 6563256325",
+    "contactEmail": "cs@support.com",
+    "selectYourIssue": "Sélectionnez votre problème",
+    "selectYourOption": "Sélectionnez votre option"
+  },
+  "settings": {
+    "settings": "Paramètres",
+    "general": "Général",
+    "change_language": "Changer de langue",
+    "change_password": "Changer de mot de passe",
+    "delete_account": "Supprimer le compte",
+    "terms_conditions": "Conditions générales",
+    "privacy_policy": "Politique de confidentialité",
+    "cancellation_policy": "Politique d'annulation",
+    "aboutUs": "À propos de nous",
+    "requests": "Demandes",
+    "chat": "Discussion",
+    "helpCenter": "Centre d'Aide",
+    "notification": "Notification",
+    "logoutConfirmation": {
+      "message": "Êtes-vous sûr de vouloir vous déconnecter ?",
+      "no": "Non",
+      "yes": "Oui",
+      "logout": "Se déconnecter"
+    }
+  },
+  "blogDetail": {
+    "no_chats_found": "Aucun chat trouvé",
+    "hello_text": "Bonjour"
+  },
+  "requestStatus": {
+    "accepted": "Accepté",
+    "completed": "Terminé",
+    "decline": "Refuser"
+  }, 
+  "acceptedRequestDetails": {
+    "details": "Détails",
+    "requestID": "ID de la demande : ",
+    "contractor": "Entrepreneur : ",
+    "estimatedBudget": "Budget estimé : ",
+    "timeline": "Calendrier : ",
+    "servicesRequired": "Services requis :",
+    "detailsLabel": "Détails :",
+    "requestStatus": "Demande ",
+    "workerProfile": "Détails du profil du travailleur",
+    "name": "Nom : ",
+    "email": "Email : ",
+    "phone": "Téléphone : ",
+    "location": "Emplacement : "
+  },
+  "completedState": {
+    "details": "Détails",
+    "viewProfile": "Voir le profil",
+    "contractor": "Entrepreneur",
+    "estimatedBudget": "Budget estimé",
+    "timeline": "Calendrier",
+    "servicesRequired": "Services requis :",
+    "detailsLabel": "Détails :",
+    "status": "État de la demande",
+    "addReview": "Ajouter un avis",
+    "typeHere": "Tapez ici...",
+    "send": "Envoyer"
+  },
+  "declinedetails": {
+    "details": "Détails",
+    "requestId": "ID de la demande",
+    "viewProfile": "Voir le profil",
+    "contractor": "Entrepreneur",
+    "estimatedBudget": "Budget estimé",
+    "timeline": "Calendrier",
+    "servicesRequired": "Services requis",
+    "detailsLabel": "Détails",
+    "addReview": "Ajouter un avis"
+  }, 
+  "suggestionscreen": {
+    "header": "Suggestions",
+    "smartSuggestions": "Suggestions intelligentes pour guider votre prochain mouvement !",
+    "faqDesc": "Trouvez tout ce dont vous avez besoin dans nos FAQ",
+    "faqTitle": "FAQ",
+    "noRecordFound": "Aucun enregistrement trouvé"
+  },
+  "businesspartnerscreen": {
+    "header": "Partenaire commercial"
+  },
+  "govhelp": {
+    "header": "Aide à la rénovation gouvernementale",
+    "description": "Ici, le gouvernement offre plusieurs types d'assistance pour les rénovations domiciliaires, notamment :"
+  },
+  "helpList": {
+    "header": "Problèmes",
+    "servicesType": "Type de services : ",
+    "issue": "Problème : ",
+    "status": "Statut",
+    "recordNotFound": "Enregistrement non trouvé"
+  },
+  "changePassword": {
+    "header": "Changer le mot de passe",
+    "currentPassword": "Mot de passe actuel",
+    "newPassword": "Nouveau mot de passe",
+    "reEnterNewPassword": "Ressaisir le nouveau mot de passe",
+    "enterCurrentPassword": "Entrez le mot de passe actuel",
+    "enterNewPassword": "Entrez le nouveau mot de passe",
+    "enterReNewPassword": "Entrez à nouveau le mot de passe",
+    "changePassword": "Changer le mot de passe",
+    "enterPassword": "Entrez le mot de passe"
+  },
+  "deleteAccount": {
+    "header": "Supprimer le compte",
+    "confirmationMessage": "Êtes-vous sûr de vouloir supprimer ce compte ?",
+    "irreversibleMessage": "• La suppression du compte est irréversible.",
+    "accessMessage": "• Vous ne pourrez plus accéder aux détails et évaluations de vos professionnels enregistrés.",
+    "keepAccount": "Conserver mon compte",
+    "deleteAccount": "Supprimer le compte",
+    "dialogTitle": "Suppression du compte",
+    "dialogDescription": "Voulez-vous supprimer ce compte ? Vous ne pourrez pas annuler cette action.",
+    "cancel": "Annuler",
+    "delete": "Supprimer"
+  },  
+  "notificationScreen": {
+    "header": "Notification",
+    "noRecordFound": "Aucun enregistrement trouvé",
+    "deleteMessage": "Supprimer",
+    "deleteSuccess": "Notification supprimée avec succès",
+    "readSuccess": "Notification marquée comme lue"
+  },
+  "notificationListScreen": {
+    "title": "Notification",
+    "emptyMessage": "Aucun enregistrement trouvé"
+  },
+  "universalSearch": {
+    "universalSearch": "Recherche globale ici",
+    "search": "Recherche",
+    "socialProfile": "Profil social",
+    "marketplaceProfile": "Profil du marché"
+  },
+  "request":{
+    "requests": "Requêtes",
+    "placeholder": "Recherchez ici",
+    "myRequests": "Mes requêtes",
+    "newRequests": "Nouvelles requêtes",
+    "requestsStatus": "Statut des requêtes",
+    "deleteRequest": "Supprimer la requête",
+    "deleteRequestConfirmation": "Êtes-vous sûr de vouloir supprimer cette requête ?"
+  },
+  "training":{
+    "title": "Formation",
+    "contractorOfMonth": "Entrepreneurs les mieux notés"
+  },
+  "error_generic": "Erreur interne du serveur",
+  "recordNotFound": "Aucun enregistrement trouvé",
+  "locationNotfound": "Emplacement introuvable",
+  "no_internet_title": "Pas d'Internet",
+  "no_internet_message": "Vous êtes hors ligne. Veuillez vérifier votre connexion."
+}

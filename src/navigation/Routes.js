@@ -1,0 +1,37 @@
+export const routes = {
+  Splash: 'Splash',
+  OnBoarding: 'OnBoarding',
+  Login: 'Login',
+  ForgotPassword: 'ForgotPassword',
+  SignUp: 'SignUp',
+  CreateProfile1: 'CreateProfile1',
+  CreateProfile2: 'CreateProfile2',
+  CreateProfile3: 'CreateProfile3',
+  CreateProfile4: 'CreateProfile4',
+  WelcomeScreen: 'WelcomeScreen',
+  SuccesfullGifScreen: 'SuccesfullGifScreen',
+
+  RequestDetails: 'RequestDetails',
+  NewProposal: 'NewProposal',
+  SubmitProposalSuccess: 'SubmitProposalSuccess',
+  // Tab bar screens
+  Tab: 'Tab',
+  DashBoard: 'DashBoard',
+  ProposalScreen: 'ProposalScreen',
+  ConclusionScreen: 'ConclusionScreen',
+  ChatScreen: 'ChatScreen',
+  ProfileScreen: 'ProfileScreen',
+  ContractsDetailScreen: 'ContractsDetailScreen',
+
+  ProposalDetailsScreen: 'ProposalDetailsScreen',
+  MessageScreen: 'MessageScreen',
+  InboxScreen: 'InboxScreen',
+  UnreadScreen: 'UnreadScreen',
+
+  AboutScreen: 'About',
+  EditProfileScreen: 'EditProfile',
+  HelpScreen: 'Help',
+  SettingScreen: 'Setting',
+  ChangePasswordScreen: 'ChangePassword',
+  DeleteAccountScreen: 'DeleteAccount',
+};
