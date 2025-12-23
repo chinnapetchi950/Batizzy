@@ -20,6 +20,8 @@ export const icons = {
   downArrow: require('../../assets/icons/downArrow.png'),
   notificationIcon: require('../../assets/icons/notificationIcon.png'),
   homeRepair: require('../../assets/icons/homeRepair.png'),
+  homebanner: require('../../assets/icons/banner.png'),
+
   searchIcon: require('../../assets/icons/searchIcon.png'),
   filterIcon: require('../../assets/icons/filterIcon.png'),
   markerIcon: require('../../assets/icons/markerIcon.png'),
@@ -35,8 +37,8 @@ export const icons = {
   // search: require('../../assets/icons/search.png'),
   // searchActive: require('../../assets/icons/search-active.png'),
 
-  search: require('../../assets/icons/home.png'),
-  searchActive: require('../../assets/icons/home-active.png'),
+  search: require('../../assets/icons/search.png'),
+  searchActive: require('../../assets/icons/search-active.png'),
 
   goal: require('../../assets/icons/goal.png'),
   goalActive: require('../../assets/icons/goal-active.png'),
@@ -70,6 +72,9 @@ export const icons = {
   emailOpen: require('../../assets/icons/email-open.png'),
   helpQuestion: require('../../assets/icons/helpQuestion.png'),
   cameraIcon: require('../../assets/icons/cameraicon.png'),
+contract: require('../../assets/icons/contract.png'),
+  crm: require('../../assets/icons/crm.png'),
+    logout: require('../../assets/icons/logout.png'),
 
   //reportIcon: require('../../assets/icons/reportIcon.png'),
   //blockIcon: require('../../assets/icons/blockIcon.png'),

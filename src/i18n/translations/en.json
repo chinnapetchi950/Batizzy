@@ -1,5 +1,5 @@
 {
-  "userApp":"user App",
+  "userApp": "user App",
   "locationPermission": {
     "title": "Location Permission",
     "message": "We need access to your location to provide better services.",
@@ -43,45 +43,51 @@
     "forgotPassword": "Forgot password?",
     "signInButton": "Sign In",
     "newUser": "New User?",
+    "newUserText": "New User?",
     "signUpLink": "Sign Up",
+    "signUpText": "Sign Up",
     "invalidEmail": "Please Enter a Valid Email",
     "emptyPassword": "Please Enter Password",
-    "successMessage": "Login Successful!"
+    "successMessage": "Login Successful!",
+    "passwordRequired": "Please Enter Password"
   },
   "language": {
-    "default": "English"
+    "default": "English",
+    "english": "English",
+    "french": "French",
+    "german": "German"
   },
   "common": {
     "errorOccurred": "An error occurred"
   },
-"signup": {
-  "signup_title": "Sign Up",
-  "signup_subtitle": "Create a new account",
-  "label_full_name": "Full Name",
-  "placeholder_full_name": "Enter your full name",
-  "label_phone_number": "Phone Number",
-  "placeholder_phone_number": "Enter your phone number",
-  "placeholder_search": "Search",
-  "label_email": "Email",
-  "placeholder_email": "Enter your email",
-  "label_password": "Password",
-  "placeholder_password": "Enter your password",
-  "label_confirm_password": "Confirm Password",
-  "placeholder_confirm_password": "Confirm your password",
-  "label_gender": "Gender",
-  "label_gender_male": "Male",
-  "label_gender_female": "Female",
-  "label_gender_others": "Others",
-  "button_signup": "Sign Up",
-  "label_already_have_account": "Already have an account?",
-  "button_signin": "Sign In",
-  "error_full_name":"Enter full name",
-  "error_phone_number": "Please enter a valid 10-digit phone number.",
-  "error_email": "Please enter a valid email address.",
-  "error_password": "Password cannot be empty.",
-  "error_password_strength": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.",
-  "error_confirm_password": "Confirm password cannot be empty.",
-  "error_password_mismatch": "Password and confirm password do not match."
+  "signup": {
+    "signup_title": "Sign Up",
+    "signup_subtitle": "Create a new account",
+    "label_full_name": "Full Name",
+    "placeholder_full_name": "Enter your full name",
+    "label_phone_number": "Phone Number",
+    "placeholder_phone_number": "Enter your phone number",
+    "placeholder_search": "Search",
+    "label_email": "Email",
+    "placeholder_email": "Enter your email",
+    "label_password": "Password",
+    "placeholder_password": "Enter your password",
+    "label_confirm_password": "Confirm Password",
+    "placeholder_confirm_password": "Confirm your password",
+    "label_gender": "Gender",
+    "label_gender_male": "Male",
+    "label_gender_female": "Female",
+    "label_gender_others": "Others",
+    "button_signup": "Sign Up",
+    "label_already_have_account": "Already have an account?",
+    "button_signin": "Sign In",
+    "error_full_name": "Enter full name",
+    "error_phone_number": "Please enter a valid 10-digit phone number.",
+    "error_email": "Please enter a valid email address.",
+    "error_password": "Password cannot be empty.",
+    "error_password_strength": "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.",
+    "error_confirm_password": "Confirm password cannot be empty.",
+    "error_password_mismatch": "Password and confirm password do not match."
   },
   "forgot_password": {
     "title": "Forgot Password",
@@ -91,7 +97,7 @@
     "button_reset_password": "Reset Password",
     "label_sign_in": "Sign In"
   },
-  "home":{
+  "home": {
     "greeting": "Hi",
     "search": "Search",
     "requests": "Requests",
@@ -108,6 +114,26 @@
     "newRequests": "New Requests",
     "viewAll": "View All",
     "contractorOfTheMonth": "Contractor of the Month"
+  },
+  "Home": {
+    "search": "Search",
+    "appliedTab": "Applied",
+    "applyButton": "Apply",
+    "bannerText": "Submit your proposal & apply for a variety of Projects.",
+    "bestMatchesTab": "Best Matches",
+    "filtersHeader": "Filters",
+    "greeting": "Hi",
+    "mostRecentTab": "Most Recent",
+    "noPostsMessage": "No posts available",
+    "otherPostsTitle": "Other Posts",
+    "projectsTitle": "Projects",
+    "resetButton": "Reset",
+    "savedTab": "Saved",
+    "searchPlaceholder": "Search ",
+    "selectLocationPlaceholder": "Select location",
+    "startButton": "Start",
+    "submitButton": "Submit",
+    "tabDescription": "Browse projects that matches your experience and skills to a customer’s inviting preferences."
   },
   "newListing": {
     "title": "New Listing",
@@ -126,8 +152,8 @@
     "selectPictures": "Select Pictures",
     "marketplaceCreated": "Marketplace created successfully.",
     "ok": "OK",
-    "listingOnMarketplace":"Listing on Marketplace",
-    "addPhotos":"Add Photos"
+    "listingOnMarketplace": "Listing on Marketplace",
+    "addPhotos": "Add Photos"
   },
   "categoryList": {
     "title": "Category List",
@@ -230,7 +256,9 @@
     "title": "Following List",
     "searchListings": "Search Listings",
     "noDataFound": "No Data Found",
-    "listing": "Listings"
+    "listing": "Listings",
+    "header": "Following",
+    "searchPlaceholder": "Search"
   },
   "createPost": {
     "title": "Create Post",
@@ -249,8 +277,16 @@
     "writeReply": "Write a reply...",
     "addComment": "Add a comment...",
     "imageLimitExceeded": "You can only upload up to 10 images.",
-    "image": "Image"
-},
+    "image": "Image",
+    "createPost": "Create Post",
+    "done": "Done",
+    "enterSomething": "Please enter something",
+    "errorOccurred": "An error occurred",
+    "gallery": "Gallery",
+    "photoVideo": "Photo/Video",
+    "saySomething": "Say something...",
+    "uploadLimit": "Upload limit exceeded"
+  },
   "otheruserprofile": {
     "followers": "Followers",
     "following": "Following",
@@ -262,9 +298,9 @@
     "writeAReply": "Write a reply...",
     "addAComment": "Add a comment...",
     "mySocial": " My Social",
-    "block":"Block",
-    "report":"Report",
-    "remove":"Remove"
+    "block": "Block",
+    "report": "Report",
+    "remove": "Remove"
   },
   "socialAllFollowingList": {
     "followersList": "Followers List",
@@ -315,7 +351,7 @@
     "describeWhatYouNeed": "Describe what you need",
     "description": "Description",
     "selectLocation": "Select location",
-    "skills":"Skills",
+    "skills": "Skills",
     "skillsRequired": "Skills required for your work",
     "bestResults": "For the best results, add 3-5 skills",
     "popularSkills": "Popular Skills",
@@ -326,7 +362,7 @@
     "receiveProposals": "You’ll receive proposals and you can invite workers to your job.",
     "postRequest": "Post Request",
     "editRequest": "Edit Request",
-    "skillsRequiredpl":"Skills required",
+    "skillsRequiredpl": "Skills required",
     "scopes": {
       "small": "Small",
       "smallSubTitle": "Quick and straight forward tasks",
@@ -433,7 +469,7 @@
     "selectYourOption": "Select your option"
   },
   "settings": {
-    "settings":"Settings",
+    "settings": "Settings",
     "general": "General",
     "change_language": "Change Language",
     "change_password": "Change Password",
@@ -451,18 +487,24 @@
       "no": "No",
       "yes": "Yes",
       "logout": "Logout"
-    }
+    },
+    "changeLanguage": "Change Language",
+    "changePassword": "Change Password",
+    "deleteAccount": "Delete Account",
+    "generaltitle": "General",
+    "title": "Settings",
+    "crm_invoice":"CRM & Invoice"
   },
   "blogDetail": {
     "no_chats_found": "No Chats found",
     "hello_text": "Hello",
-    "blogDetails":"Blog Details"
+    "blogDetails": "Blog Details"
   },
   "requestStatus": {
     "accepted": "Accepted",
     "completed": "Completed",
     "decline": "Decline"
-  }, 
+  },
   "acceptRequestDetails": {
     "details": "Details",
     "viewProfile": "View profile",
@@ -501,7 +543,7 @@
     "servicesRequired": "Services Required",
     "detailsLabel": "Details",
     "addReview": "Add Review"
-  }, 
+  },
   "suggestionscreen": {
     "header": "Suggestions",
     "smartSuggestions": "Smart suggestions to guide your next move!",
@@ -545,7 +587,7 @@
     "dialogDescription": "Do you want to delete this account? You cannot undo this action.",
     "cancel": "Cancel",
     "delete": "Delete"
-  },  
+  },
   "notificationScreen": {
     "header": "Notification",
     "noRecordFound": "Record not found",
@@ -557,13 +599,13 @@
     "title": "Notification",
     "emptyMessage": "Record not found"
   },
-  "universalSearch":{
+  "universalSearch": {
     "universalSearch": "Global search here",
     "search": "Search",
     "socialProfile": "Social Profile",
     "marketplaceProfile": "Marketplace Profile"
   },
-  "request":{
+  "request": {
     "requests": "Requests",
     "placeholder": "Search here",
     "myRequests": "My Requests",
@@ -572,13 +614,284 @@
     "deleteRequest": "Delete request",
     "deleteRequestConfirmation": "Are you sure you want to delete this request?"
   },
-  "training":{
-    "title":"Training",
-    "contractorOfMonth":"Top rated Contractors"
+  "training": {
+    "title": "Training",
+    "contractorOfMonth": "Top rated Contractors"
   },
-  "error_generic":"Internal server error",
+  "error_generic": "Internal server error",
   "recordNotFound": "Record not found",
-  "LocationNotfound":"Location not found",
+  "LocationNotfound": "Location not found",
   "no_internet_title": "No Internet",
-  "no_internet_message": "You are offline. Please check your connection."
+  "no_internet_message": "You are offline. Please check your connection.",
+  "AddMarketplace": {
+    "addPhotos": "Add Photos",
+    "category": "Category",
+    "chooseMainPhoto": "Choose Main Photo",
+    "condition": "Condition",
+    "description": "Description",
+    "edit": "Edit",
+    "location": "Location",
+    "marketplaceSuccess": "Marketplace created successfully",
+    "newListing": "New Listing",
+    "ok": "OK",
+    "photosCount": "Photos",
+    "price": "Price",
+    "productTitle": "Product Title",
+    "publish": "Publish",
+    "selectPictures": "Select Pictures",
+    "takePictures": "Take Pictures"
+  },
+  "buttons": {
+    "continue": "Continue"
+  },
+  "categoryScreen": {
+    "allCategories": "All Categories",
+    "emptyMessage": "No categories found",
+    "title": "Category List"
+  },
+  "changePasswordScreen": {
+    "changePasswordButton": "Change Password",
+    "currentPassword": "Current Password",
+    "enterCurrentPassword": "Enter current password",
+    "enterNewPassword": "Enter new password",
+    "enterReEnterNewPassword": "Re-enter new password",
+    "newPassword": "New Password",
+    "reEnterNewPassword": "Re-enter New Password",
+    "title": "Change Password"
+  },
+  "chat": {
+    "header": "Chat",
+    "inboxTab": "Inbox",
+    "typeHere": "Type here...",
+    "unread": "Unread",
+    "unreadTab": "Unread"
+  },
+  "contractsDetails": {
+    "cancel": "Cancel",
+    "clientName": "Client Name",
+    "details": "Details",
+    "doYouReallyWantToFinishJob": "Do you really want to finish this job?",
+    "estimatedBudget": "Estimated Budget",
+    "finishJob": "Finish Job",
+    "jobCompleted": "Job Completed",
+    "jobPending": "Job Pending",
+    "jobRejected": "Job Rejected",
+    "noTasksRemaining": "No tasks remaining",
+    "notStarted": "Not Started",
+    "ok": "OK",
+    "proposalId": "Proposal ID",
+    "remainingWork": "Remaining Work",
+    "servicesAccepted": "Services Accepted",
+    "timeline": "Timeline",
+    "title": "Contract Details",
+    "workProgress": "Work Progress"
+  },
+  "createProfile": {
+    "title": "Create Profile"
+  },
+  "createProfile2": {
+    "addYourSkills": "Add Your Skills",
+    "bestResultsSkills": "For the best results, add 3-5 skills",
+    "companySize": "Company Size",
+    "continue": "Continue",
+    "experience0to2": "0-2 years",
+    "experience10plus": "10+ years",
+    "experience3to7": "3-7 years",
+    "experienceLevel": "Experience Level",
+    "expertiseQuestion": "What's your expertise?",
+    "selectCompanySize": "Select Company Size",
+    "selectExperience": "Select Experience Level",
+    "size1to3": "1-3 members",
+    "size4to7": "4-7 members",
+    "size8to20": "8-20 members",
+    "sizeMoreThan20": "More than 20 members"
+  },
+  "createProfile3": {
+    "24Hrs": "24 Hours",
+    "continue": "Continue",
+    "endTime": "End Time",
+    "errors": {
+      "locationNotFound": "Location not found",
+      "locationPermission": "Location permission denied"
+    },
+    "fetchingLocation": "Fetching location...",
+    "permissions": {
+      "askMeLater": "Ask Me Later",
+      "backgroundLocationMessage": "We need access to your location to provide better services.",
+      "backgroundLocationTitle": "Background Location Permission",
+      "cancel": "Cancel",
+      "locationMessage": "We need access to your location to provide better services.",
+      "locationTitle": "Location Permission",
+      "ok": "OK"
+    },
+    "preferredLocation": "Preferred Location",
+    "setAvailabilityAndLocation": "Set Availability and Location",
+    "startTime": "Start Time",
+    "step3": "Step 3",
+    "validation": {
+      "selectWorkingDay": "Please select at least one working day",
+      "selectWorkingHours": "Please select working hours",
+      "startTimeEarlier": "Start time must be earlier than end time",
+      "unableToFetchLocation": "Unable to fetch location"
+    },
+    "workingDays": "Working Days",
+    "workingHours": "Working Hours"
+  },
+  "createprofile4": {
+    "chooseExperienceCertificates": "Choose Experience Certificates",
+    "chooseIdProof": "Choose ID Proof",
+    "continue": "Continue",
+    "experienceCertificates": "Experience Certificates",
+    "idProof": "ID Proof",
+    "selectDocuments": "Select Documents",
+    "selectPictures": "Select Pictures",
+    "step4": "Step 4",
+    "takePictures": "Take Pictures",
+    "uploadDocument": "Upload Document",
+    "uploadIdProofWarning": "Please upload ID proof"
+  },
+  "deleteAccountScreen": {
+    "accessLoss": "You will lose access to all your data",
+    "accountDeletionIrreversible": "Account deletion is irreversible",
+    "cancelButton": "Cancel",
+    "confirmationMessage": "Are you sure you want to delete your account?",
+    "deleteAccount": "Delete Account",
+    "deleteButton": "Delete",
+    "dialogDescription": "This action cannot be undone",
+    "dialogTitle": "Delete Account",
+    "keepAccount": "Keep Account",
+    "title": "Delete Account"
+  },
+  "error": {
+    "noChats": "No chats found",
+    "recordNotFound": "Record not found"
+  },
+  "followersList": {
+    "allFollowers": "All Followers",
+    "followRequests": "Follow Requests",
+    "header": "Followers"
+  },
+  "labels": {
+    "email": "Email",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "password": "Password",
+    "phoneNumber": "Phone Number",
+    "vatNumber": "VAT Number"
+  },
+  "location": {
+    "selectLocation": "Select location"
+  },
+  "marketplaceAccountScreen": {
+    "following": "Following",
+    "interests": "Interests",
+    "marketplaceFollowers": "Marketplace followers",
+    "selling": "Selling",
+    "title": "Marketplace Account",
+    "yourListings": "Your Listings"
+  },
+  "messages": {
+    "enterFirstName": "Enter first name",
+    "enterLastName": "Enter last name",
+    "enterPassword": "Enter password",
+    "enterVATNumber": "Enter VAT number",
+    "enterValidEmail": "Enter valid email",
+    "enterValidPhone": "Enter valid phone number",
+    "passwordCriteria": "Password must meet criteria"
+  },
+  "newproposal": {
+    "additionalTerms": "Additional Terms",
+    "date": "Date",
+    "enterGeneralInformation": "Enter general information",
+    "enterNote": "Enter note",
+    "enterPrice": "Enter price",
+    "estimatedPrice": "Estimated Price",
+    "estimatedStartingDate": "Estimated Starting Date",
+    "generalInformation": "General Information",
+    "genericErrorMessage": "An error occurred",
+    "newProposal": "New Proposal",
+    "note": "Note",
+    "price": "Price",
+    "saySomething": "Say something...",
+    "selectAppointmentDate": "Select Appointment Date",
+    "selectAppointmentDateForQuote": "Select Appointment Date for Quote",
+    "selectServiceType": "Select Service Type",
+    "selectStartDate": "Select Start Date",
+    "servicesYouProvide": "Services You Provide",
+    "submitApplyStartProject": "Submit & Apply to Start Project",
+    "submitProposal": "Submit Proposal",
+    "termsChangeWork": "Terms may change based on work",
+    "termsProvideAccess": "Terms: Provide access",
+    "termsUnforeseenIssues": "Terms: Unforeseen issues"
+  },
+  "placeholders": {
+    "email": "Email",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "password": "Password",
+    "phoneNumber": "Phone Number",
+    "search": "Search",
+    "vatNumber": "VAT Number"
+  },
+  "productDetails": {
+    "condition": "Condition",
+    "descriptionTitle": "Description",
+    "joinedIn": "Joined in",
+    "location": "Location",
+    "marketplace": "Marketplace",
+    "messagePlaceholder": "Hi, is this still available?",
+    "readLess": "Read Less",
+    "readMore": "Read More",
+    "sellerInformation": "Seller Information",
+    "sellerProfile": "Seller Profile",
+    "sendSellerMessage": "Send seller a message",
+    "similarListings": "Similar Listings"
+  },
+  "proposal": {
+    "myProposal": "My Proposal",
+    "proposalDescription": "Proposal Description",
+    "proposals": "Proposals"
+  },
+  "proposalDetails": {
+    "clientName": "Client Name",
+    "details": "Details",
+    "detailsSection": "Details",
+    "estimatedBudget": "Estimated Budget",
+    "noServices": "No services",
+    "processNotStarted": "Process not started",
+    "proposalID": "Proposal ID",
+    "servicesAccepted": "Services Accepted",
+    "timeline": "Timeline",
+    "trackProgress": "Track Progress"
+  },
+  "requestDetails": {
+    "aboutClient": "About Client",
+    "activityOnProject": "Activity on Project",
+    "apply": "Apply",
+    "budget": "Budget",
+    "experience": "Experience",
+    "invitesSent": "Invites Sent",
+    "jobDetails": "Job Details",
+    "lastViewedByClient": "Last Viewed by Client",
+    "location": "Location",
+    "proposals": "Proposals",
+    "scopeOfWork": "Scope of Work",
+    "skillsAndExpertise": "Skills and Expertise"
+  },
+  "requestdetails": {
+    "backButton": "Back",
+    "proposalSubmittedSuccess": "Proposal submitted successfully",
+    "quotationCreated": "Quotation created"
+  },
+  "welcomeScreen": {
+    "buttonText": "Get Started",
+    "lastLabel": "Last Label",
+    "subLabel": "Sub Label",
+    "title": "Welcome"
+  },
+  "yourListings": {
+    "createListing": "Create Listing",
+    "header": "Your Listings",
+    "searchPlaceholder": "Search"
+  }
 }

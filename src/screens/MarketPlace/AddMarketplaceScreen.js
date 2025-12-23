@@ -33,7 +33,7 @@ import FontFamily from '../../helper/FontFamily';
 import Input from '../../common/Input';
 import {BASE_URL, IMAGE_URL} from '../../helper/ApiConstant';
 import Icons from '../../common/Icons';
-// import {useLanguage} from '../../context/LanguageContext';
+import {useLanguage} from '../../context/LanguageContext';
 
 const AddMarketplaceScreen = () => {
   const {t} = useTranslation();
@@ -61,7 +61,7 @@ const AddMarketplaceScreen = () => {
   const [isuserData, setUserData] = useState('');
   const [isTitle, setTitle] = useState('');
   const [isPrice, setPrice] = useState('');
-  // const {selectedLanguage, changeLanguage} = useLanguage();
+  const {selectedLanguage, changeLanguage} = useLanguage();
 
   const conditions = [
     {label: t('marketplace.new'), value: 'new'},
@@ -267,11 +267,11 @@ const AddMarketplaceScreen = () => {
           />
         </ImageBackground>
         <Text style={styles.categoryText}>
-          {/* {selectedLanguage == 'fr' || item?.name_fr?.length > 18
+          {selectedLanguage == 'fr' || item?.name_fr?.length > 18
             ? `${item?.name_fr?.slice(0, 18)}...`
             : selectedLanguage == 'de' || item?.name_de?.length > 18
             ? `${item?.name_de?.slice(0, 18)}...`
-            : `${item?.name?.slice(0, 30)}...`} */}
+            : `${item?.name?.slice(0, 30)}...`}
         </Text>
       </Pressable>
     );

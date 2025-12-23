@@ -37,7 +37,7 @@ import Geolocation from '@react-native-community/geolocation';
 import FontFamily from '../../helper/FontFamily';
 import Icons from '../../common/Icons';
 import LanguageData from '../../i18n/LanguageData';
-// import {useLanguage} from '../../context/LanguageContext';
+import {useLanguage} from '../../context/LanguageContext';
 
 const DashBoard = () => {
   const dropdownRef = useRef();
@@ -48,7 +48,7 @@ const DashBoard = () => {
   const [code, setCode] = useState();
   const [userData, setUserData] = useState([]);
   const [storedLanguage, setStoredLanguage] = useState({});
-  // const {selectedLanguage, changeLanguage} = useLanguage();
+  const {selectedLanguage, changeLanguage} = useLanguage();
 
   const [isCommentSheetOpen, setIsCommentSheetOpen] = useState(false);
   const [search, setSearch] = useState('');
@@ -103,7 +103,7 @@ const DashBoard = () => {
   const getLanguageCode = async () => {
     var LanguageCode = JSON.parse(await AsyncStorage.getItem('Language'));
     setCode(LanguageCode);
-    // changeLanguage(LanguageCode);
+     changeLanguage(LanguageCode);
     if (LanguageCode != null) {
       updateLanguageCode(LanguageCode);
     }
@@ -161,7 +161,7 @@ const DashBoard = () => {
         const selectedCodeLang = LanguageData.find(
           lang => lang.code === response.data.data.lang,
         );
-        // changeLanguage(selectedCodeLang?.code);
+        changeLanguage(selectedCodeLang?.code);
         setStoredLanguage(selectedCodeLang);
       })
       .catch(error => {
@@ -313,15 +313,20 @@ const DashBoard = () => {
 
   const renderRequestData = (item, index) => {
     return (
-      <View key={index}>
-        <View
+      <View 
+      style={{ borderColor:'#A6A6A6',
+            borderWidth:0.5,borderRadius:25,marginHorizontal:18,marginBottom: '4%',padding:'2%'}} 
+            key={index}>
+        {/* <View
           style={{
             height: 1,
-            backgroundColor: '#A6A6A6',
+            //backgroundColor: '#A6A6A6',
+            borderColor:'#A6A6A6',
+            borderWidth:0.5,
             marginBottom: '4%',
-            marginHorizontal: '4%',
+            marginHorizontal: '4%',borderRadius:25
           }}
-        />
+        /> */}
         <Pressable
           style={styles.projectCard}
           onPress={() => {
@@ -405,7 +410,7 @@ const DashBoard = () => {
         <View
           style={{
             height: 1,
-            backgroundColor: '#A6A6A6',
+            backgroundColor: 'red',
             marginBottom: '4%',
             marginHorizontal: '4%',
           }}
@@ -505,7 +510,7 @@ const DashBoard = () => {
     setStoredLanguage({image: image, text: value});
     await AsyncStorage.setItem('Language', JSON.stringify(code));
     updateLanguageCode(code);
-    // changeLanguage(code);
+  changeLanguage(code);
     dropdownRef.current.hide();
   };
 
@@ -523,9 +528,9 @@ const DashBoard = () => {
               <View style={{flexDirection: 'row', justifyContent: 'center'}}>
                 <Text style={styles.title}>{t('Home.greeting') + ' '} </Text>
                 <Text style={[styles.title]}>
-                  {/* {selectedLanguage != 'en' && userData?.name?.length > 6
+                  {selectedLanguage != 'en' && userData?.name?.length > 6
                     ? `${userData.name.substring(0, 6)}...`
-                    : userData?.name} */}
+                    : userData?.name}
                 </Text>
               </View>
             </View>
@@ -588,7 +593,7 @@ const DashBoard = () => {
                   />
                 </View>
               </ModalDropdown>
-              <TouchableOpacity
+              {/* <TouchableOpacity
                 style={{
                   justifyContent: 'center',
                   flexDirection: 'row',
@@ -602,7 +607,7 @@ const DashBoard = () => {
                   iconColor={Colors.primary}
                   iconSize={20}
                 />
-              </TouchableOpacity>
+              </TouchableOpacity> */}
               <View>
                 <Pressable
                   onPress={() =>
@@ -623,12 +628,19 @@ const DashBoard = () => {
           </View>
           <ScrollView>
             <LinearGradient
-              colors={['#FFFFFF', '#754595']}
-              start={{x: 0, y: 0}}
-              end={{x: 1, y: 1}}
-              style={{marginTop: '4%'}}>
+  colors={['#9747FF', '#843CB4']}  // matches your image’s purple blend
+  start={{ x: 0.5, y: 0 }}         // TOP
+  end={{ x: 0.5, y: 1 }}           // BOTTOM
+  style={{
+    borderRadius: 32,
+    height: 160,       // adjust size as needed
+    width: '95%',
+    marginHorizontal:25,
+    alignSelf:'center',
+    marginTop:20
+  }}
+>
               <View style={styles.banner}>
-                <Image source={icons.homeRepair} style={styles.bannerImage} />
                 <View style={styles.bannerTextWrapper}>
                   <Text style={styles.bannerText}>{t('Home.bannerText')}</Text>
                   <View style={styles.bannerButtons}>
@@ -649,6 +661,8 @@ const DashBoard = () => {
                     </TouchableOpacity>
                   </View>
                 </View>
+                <Image source={icons.homebanner} style={styles.bannerImage} />
+
               </View>
             </LinearGradient>
             <View style={[styles.mainPadding]}>
@@ -656,7 +670,7 @@ const DashBoard = () => {
                 {t('Home.projectsTitle')}
               </Text>
             </View>
-            <View style={[styles.mainPaddingH, styles.mainpaddingBottom]}>
+            <View style={styles.mainpaddingBottom} >
               <CustomSearchBar
                 value={search}
                 placeholder={t('Home.searchPlaceholder')}
@@ -982,7 +996,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFC727',
     paddingVertical: 3,
     paddingHorizontal: 9,
-    borderRadius: 4,
+    borderRadius: 25,
     marginRight: 8,
   },
   buttonText: {
@@ -1044,6 +1058,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 16,
     marginBottom: 16,
+    
   },
   postedDate: {
     color: '#263238',
@@ -1058,7 +1073,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   projectDetails: {
-    color: '#263238',
+    color: '#787878',
     fontFamily: 'Inter-Medium',
     fontSize: responsiveFontSize(1.64),
     marginBottom: 8,
@@ -1075,7 +1090,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   tag: {
-    backgroundColor: '#C7C7C7',
+    backgroundColor: '#000000',
     borderRadius: 4,
     paddingVertical: 4,
     paddingHorizontal: 8,
@@ -1085,7 +1100,7 @@ const styles = StyleSheet.create({
   tagText: {
     fontFamily: 'Inter-Medium',
     fontSize: responsiveFontSize(1.64),
-    color: '#000000',
+    color: '#FFFFFF',
   },
   projectFooter: {
     flexDirection: 'row',
@@ -1186,7 +1201,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   mainPadding: {
-    padding: '4%',
+    padding: '3%',
   },
   mainPaddingH: {
     paddingHorizontal: '4%',

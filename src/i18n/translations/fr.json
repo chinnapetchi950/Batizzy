@@ -1,12 +1,12 @@
 {
-  "userApp":"user App",
+  "userApp": "user App",
   "locationPermission": {
     "title": "Autorisation de localisation",
     "message": "Nous avons besoin d’accéder à votre emplacement pour fournir de meilleurs services.",
     "buttonNeutral": "Demandez-moi plus tard",
     "buttonNegative": "Annuler",
     "buttonPositive": "Ok"
-   },
+  },
   "notification": {
     "message": "Message",
     "renovationPostRequest": "Demande de poste de rénovation",
@@ -22,14 +22,14 @@
   },
   "onboarding": {
     "titles": [
-    "UNE RÉNOVATION SÉCURISÉE",
-    "VENDRE ET ACHETER DES MATÉRIAUX DE CONSTRUCTION",
-    "AIDE ET CONSEILS À TOUT MOMENT"
+      "UNE RÉNOVATION SÉCURISÉE",
+      "VENDRE ET ACHETER DES MATÉRIAUX DE CONSTRUCTION",
+      "AIDE ET CONSEILS À TOUT MOMENT"
     ],
     "descriptions": [
-    "Recherchez un entrepreneur dans votre région,\n obtenez des devis, conservez l'historique des communications\npour éviter la fraude",
-    "Listez vos matériaux de construction inutilisés,\nfixez le prix et vendez à la\ncommunauté Batizzy",
-    "Vous ne savez pas comment comparer les devis ?\n Demandez à notre équipe en une seconde et ne faites jamais le mauvais choix de rénovation."
+      "Recherchez un entrepreneur dans votre région,\n obtenez des devis, conservez l'historique des communications\npour éviter la fraude",
+      "Listez vos matériaux de construction inutilisés,\nfixez le prix et vendez à la\ncommunauté Batizzy",
+      "Vous ne savez pas comment comparer les devis ?\n Demandez à notre équipe en une seconde et ne faites jamais le mauvais choix de rénovation."
     ],
     "skip": "SAUTER",
     "getStarted": "Commencer"
@@ -43,13 +43,19 @@
     "forgotPassword": "Mot de passe oublié ?",
     "signInButton": "Se connecter",
     "newUser": "Nouvel utilisateur ?",
+    "newUserText": "Nouvel utilisateur ?",
     "signUpLink": "S'inscrire",
+    "signUpText": "S'inscrire",
     "invalidEmail": "Veuillez entrer un e-mail valide",
     "emptyPassword": "Veuillez entrer le mot de passe",
-    "successMessage": "Connexion réussie !"
+    "successMessage": "Connexion réussie !",
+    "passwordRequired": "Veuillez entrer le mot de passe"
   },
   "language": {
-    "default": "English"
+    "default": "Anglais",
+    "english": "Anglais",
+    "french": "Français",
+    "german": "Allemand"
   },
   "common": {
     "errorOccurred": "Une erreur s'est produite"
@@ -91,8 +97,8 @@
     "button_reset_password": "Réinitialiser le mot de passe",
     "label_sign_in": "Se connecter"
   },
-  "home":{
-    "greeting": "Bonjour",
+  "home": {
+     "greeting": "Salut",
     "search": "Rechercher",
     "requests": "Demandes",
     "suggestions": "Suggestions",
@@ -100,14 +106,34 @@
     "subtitle": "Mettre en avant les performances et le dévouement",
     "betterHome": "Vous aider à construire une meilleure maison",
     "highlightText": "Mettre en avant les performances et le dévouement",
-    "viewButton": "Voir >>",
+    "viewButton": "bouton d'affichage",
     "governmentHelp": "Aide à la rénovation gouvernementale",
     "betterHomeHelp": "Vous aider à construire une meilleure maison",
-    "training": "Formation",
+    "training": "entraînement",
     "businessPartners": "Partenaires commerciaux",
     "newRequests": "Nouvelles demandes",
-    "viewAll": "Tout voir",
+    "viewAll": "voirTout",
     "contractorOfTheMonth": "Entrepreneur du mois"
+  },
+  "Home": {
+    "search": "Rechercher",
+    "appliedTab": "Appliqué",
+    "applyButton": "Appliquer",
+    "bannerText": "Bannière",
+    "bestMatchesTab": "Meilleures correspondances",
+    "filtersHeader": "Filtres",
+    "greeting": "Salut",
+    "mostRecentTab": "Plus récent",
+    "noPostsMessage": "Aucun message disponible",
+    "otherPostsTitle": "Autres messages",
+    "projectsTitle": "Projets",
+    "resetButton": "Réinitialiser",
+    "savedTab": "Enregistré",
+    "searchPlaceholder": "Rechercher",
+    "selectLocationPlaceholder": "Sélectionner un emplacement",
+    "startButton": "Commencer",
+    "submitButton": "Soumettre",
+    "tabDescription": "Description"
   },
   "newListing": {
     "title": "Nouvelle annonce",
@@ -126,8 +152,8 @@
     "selectPictures": "Sélectionnez des images",
     "marketplaceCreated": "Place de marché créée avec succès.",
     "ok": "OK",
-    "listingOnMarketplace":"Inscription sur Marketplace",
-    "addPhotos":"Ajouter des photos"
+    "listingOnMarketplace": "Inscription sur Marketplace",
+    "addPhotos": "Ajouter des photos"
   },
   "categoryList": {
     "title": "Liste des catégories",
@@ -206,7 +232,6 @@
     "location": "Lieu",
     "similarListings": "Annonces similaires des vendeurs",
     "joinedIn": "Rejoint en"
-
   },
   "editLocation": {
     "selectLocation": "Sélectionnez un emplacement"
@@ -216,7 +241,7 @@
     "listOfItems": "Liste des articles"
   },
   "yourListing": {
-   "title": "Your Listings",
+    "title": "Your Listings",
     "createListing": "Créer une annonce",
     "noDataFound": "Aucune donnée trouvée",
     "searchListings": "Rechercher des annonces"
@@ -231,7 +256,9 @@
     "title": "Following List",
     "searchListings": "Rechercher des annonces",
     "noDataFound": "Aucune donnée trouvée",
-    "listing": "Annonces"
+    "listing": "Annonces",
+    "header": "Abonnement",
+    "searchPlaceholder": "Rechercher"
   },
   "createPost": {
     "title": "Créer une Publication",
@@ -250,8 +277,16 @@
     "writeReply": "Écrire une réponse...",
     "addComment": "Ajouter un commentaire...",
     "imageLimitExceeded": "Vous ne pouvez télécharger que 10 images maximum.",
-    "image": "Image"
-},
+    "image": "Image",
+    "createPost": "Créer une publication",
+    "done": "Terminé",
+    "enterSomething": "Veuillez entrer quelque chose",
+    "errorOccurred": "Une erreur s'est produite",
+    "gallery": "Galerie",
+    "photoVideo": "Photo/Vidéo",
+    "saySomething": "Dites quelque chose...",
+    "uploadLimit": "Limite de téléchargement dépassée"
+  },
   "otheruserprofile": {
     "followers": "Abonnés",
     "following": "Abonnement",
@@ -328,7 +363,7 @@
     "receiveProposals": "Vous recevrez des propositions et vous pourrez inviter des travailleurs pour votre travail.",
     "postRequest": "Publier la demande",
     "editRequest": "Modifier la demande",
-    "skillsRequiredpl":"Compétences requises",
+    "skillsRequiredpl": "Compétences requises",
     "scopes": {
       "small": "Petit",
       "smallSubTitle": "Tâches rapides et simples",
@@ -453,7 +488,12 @@
       "no": "Non",
       "yes": "Oui",
       "logout": "Se déconnecter"
-    }
+    },
+    "changeLanguage": "Changer de langue",
+    "changePassword": "Changer le mot de passe",
+    "deleteAccount": "Supprimer le compte",
+    "generaltitle": "Général",
+    "title": "Paramètres"
   },
   "blogDetail": {
     "no_chats_found": "Aucun chat trouvé",
@@ -463,7 +503,7 @@
     "accepted": "Accepté",
     "completed": "Terminé",
     "decline": "Refuser"
-  }, 
+  },
   "acceptedRequestDetails": {
     "details": "Détails",
     "requestID": "ID de la demande : ",
@@ -502,7 +542,7 @@
     "servicesRequired": "Services requis",
     "detailsLabel": "Détails",
     "addReview": "Ajouter un avis"
-  }, 
+  },
   "suggestionscreen": {
     "header": "Suggestions",
     "smartSuggestions": "Suggestions intelligentes pour guider votre prochain mouvement !",
@@ -546,7 +586,7 @@
     "dialogDescription": "Voulez-vous supprimer ce compte ? Vous ne pourrez pas annuler cette action.",
     "cancel": "Annuler",
     "delete": "Supprimer"
-  },  
+  },
   "notificationScreen": {
     "header": "Notification",
     "noRecordFound": "Aucun enregistrement trouvé",
@@ -564,8 +604,8 @@
     "socialProfile": "Profil social",
     "marketplaceProfile": "Profil du marché"
   },
-  "request":{
-    "requests": "Requêtes",
+  "request": {
+    "requests": "Demandes",
     "placeholder": "Recherchez ici",
     "myRequests": "Mes requêtes",
     "newRequests": "Nouvelles requêtes",
@@ -573,7 +613,7 @@
     "deleteRequest": "Supprimer la requête",
     "deleteRequestConfirmation": "Êtes-vous sûr de vouloir supprimer cette requête ?"
   },
-  "training":{
+  "training": {
     "title": "Formation",
     "contractorOfMonth": "Entrepreneurs les mieux notés"
   },
@@ -581,5 +621,276 @@
   "recordNotFound": "Aucun enregistrement trouvé",
   "locationNotfound": "Emplacement introuvable",
   "no_internet_title": "Pas d'Internet",
-  "no_internet_message": "Vous êtes hors ligne. Veuillez vérifier votre connexion."
+  "no_internet_message": "Vous êtes hors ligne. Veuillez vérifier votre connexion.",
+  "AddMarketplace": {
+    "addPhotos": "Ajouter des photos",
+    "category": "Catégorie",
+    "chooseMainPhoto": "Choisir la photo principale",
+    "condition": "Condition",
+    "description": "Description",
+    "edit": "Modifier",
+    "location": "Emplacement",
+    "marketplaceSuccess": "Place de marché créée avec succès",
+    "newListing": "Nouvelle annonce",
+    "ok": "OK",
+    "photosCount": "Photos",
+    "price": "Prix",
+    "productTitle": "Titre du produit",
+    "publish": "Publier",
+    "selectPictures": "Sélectionner des photos",
+    "takePictures": "Prendre des photos"
+  },
+  "buttons": {
+    "continue": "Continuer"
+  },
+  "categoryScreen": {
+    "allCategories": "Toutes les catégories",
+    "emptyMessage": "Aucune catégorie trouvée",
+    "title": "Liste des catégories"
+  },
+  "changePasswordScreen": {
+    "changePasswordButton": "Changer le mot de passe",
+    "currentPassword": "Mot de passe actuel",
+    "enterCurrentPassword": "Entrez le mot de passe actuel",
+    "enterNewPassword": "Entrez le nouveau mot de passe",
+    "enterReEnterNewPassword": "Ressaisir le nouveau mot de passe",
+    "newPassword": "Nouveau mot de passe",
+    "reEnterNewPassword": "Ressaisir le nouveau mot de passe",
+    "title": "Changer le mot de passe"
+  },
+  "chat": {
+    "header": "Chat",
+    "inboxTab": "Boîte de réception",
+    "typeHere": "Tapez ici...",
+    "unread": "Non lu",
+    "unreadTab": "Non lu"
+  },
+  "contractsDetails": {
+    "cancel": "Annuler",
+    "clientName": "Nom du client",
+    "details": "Détails",
+    "doYouReallyWantToFinishJob": "Voulez-vous vraiment terminer ce travail ?",
+    "estimatedBudget": "Budget estimé",
+    "finishJob": "Terminer le travail",
+    "jobCompleted": "Travail terminé",
+    "jobPending": "Travail en attente",
+    "jobRejected": "Travail rejeté",
+    "noTasksRemaining": "Aucune tâche restante",
+    "notStarted": "Non commencé",
+    "ok": "OK",
+    "proposalId": "ID de la proposition",
+    "remainingWork": "Travail restant",
+    "servicesAccepted": "Services acceptés",
+    "timeline": "Calendrier",
+    "title": "Détails du contrat",
+    "workProgress": "Progression du travail"
+  },
+  "createProfile": {
+    "title": "Créer un profil"
+  },
+  "createProfile2": {
+    "addYourSkills": "Ajoutez vos compétences",
+    "bestResultsSkills": "Pour de meilleurs résultats, ajoutez 3 à 5 compétences",
+    "companySize": "Taille de l'entreprise",
+    "continue": "Continuer",
+    "experience0to2": "0-2 ans",
+    "experience10plus": "10+ ans",
+    "experience3to7": "3-7 ans",
+    "experienceLevel": "Niveau d'expérience",
+    "expertiseQuestion": "Quelle est votre expertise ?",
+    "selectCompanySize": "Sélectionner la taille de l'entreprise",
+    "selectExperience": "Sélectionner le niveau d'expérience",
+    "size1to3": "1-3 membres",
+    "size4to7": "4-7 membres",
+    "size8to20": "8-20 membres",
+    "sizeMoreThan20": "Plus de 20 membres"
+  },
+  "createProfile3": {
+    "24Hrs": "24 heures",
+    "continue": "Continuer",
+    "endTime": "Heure de fin",
+    "errors": {
+      "locationNotFound": "Emplacement introuvable",
+      "locationPermission": "Autorisation de localisation refusée"
+    },
+    "fetchingLocation": "Récupération de l'emplacement...",
+    "permissions": {
+      "askMeLater": "Demandez-moi plus tard",
+      "backgroundLocationMessage": "Nous avons besoin d'accès à votre emplacement pour fournir de meilleurs services.",
+      "backgroundLocationTitle": "Autorisation de localisation en arrière-plan",
+      "cancel": "Annuler",
+      "locationMessage": "Nous avons besoin d'accès à votre emplacement pour fournir de meilleurs services.",
+      "locationTitle": "Autorisation de localisation",
+      "ok": "OK"
+    },
+    "preferredLocation": "Emplacement préféré",
+    "setAvailabilityAndLocation": "Définir la disponibilité et l'emplacement",
+    "startTime": "Heure de début",
+    "step3": "Étape 3",
+    "validation": {
+      "selectWorkingDay": "Veuillez sélectionner au moins un jour ouvrable",
+      "selectWorkingHours": "Veuillez sélectionner les heures de travail",
+      "startTimeEarlier": "L'heure de début doit être antérieure à l'heure de fin",
+      "unableToFetchLocation": "Impossible de récupérer l'emplacement"
+    },
+    "workingDays": "Jours ouvrables",
+    "workingHours": "Heures de travail"
+  },
+  "createprofile4": {
+    "chooseExperienceCertificates": "Choisir les certificats d'expérience",
+    "chooseIdProof": "Choisir la preuve d'identité",
+    "continue": "Continuer",
+    "experienceCertificates": "Certificats d'expérience",
+    "idProof": "Preuve d'identité",
+    "selectDocuments": "Sélectionner des documents",
+    "selectPictures": "Sélectionner des photos",
+    "step4": "Étape 4",
+    "takePictures": "Prendre des photos",
+    "uploadDocument": "Télécharger un document",
+    "uploadIdProofWarning": "Veuillez télécharger une preuve d'identité"
+  },
+  "deleteAccountScreen": {
+    "accessLoss": "Vous perdrez l'accès à toutes vos données",
+    "accountDeletionIrreversible": "La suppression du compte est irréversible",
+    "cancelButton": "Annuler",
+    "confirmationMessage": "Êtes-vous sûr de vouloir supprimer votre compte ?",
+    "deleteAccount": "Supprimer le compte",
+    "deleteButton": "Supprimer",
+    "dialogDescription": "Cette action ne peut pas être annulée",
+    "dialogTitle": "Supprimer le compte",
+    "keepAccount": "Conserver le compte",
+    "title": "Supprimer le compte"
+  },
+  "error": {
+    "noChats": "Aucun chat trouvé",
+    "recordNotFound": "Enregistrement introuvable"
+  },
+  "followersList": {
+    "allFollowers": "Tous les abonnés",
+    "followRequests": "Demandes de suivi",
+    "header": "Abonnés"
+  },
+  "labels": {
+    "email": "E-mail",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "password": "Mot de passe",
+    "phoneNumber": "Numéro de téléphone",
+    "vatNumber": "Numéro de TVA"
+  },
+  "location": {
+    "selectLocation": "Sélectionner un emplacement"
+  },
+  "marketplaceAccountScreen": {
+    "following": "Abonnement",
+    "interests": "Intérêts",
+    "marketplaceFollowers": "Abonnés du marché",
+    "selling": "Vente",
+    "title": "Compte Marketplace",
+    "yourListings": "Vos annonces"
+  },
+  "messages": {
+    "enterFirstName": "Entrez le prénom",
+    "enterLastName": "Entrez le nom de famille",
+    "enterPassword": "Entrez le mot de passe",
+    "enterVATNumber": "Entrez le numéro de TVA",
+    "enterValidEmail": "Entrez un e-mail valide",
+    "enterValidPhone": "Entrez un numéro de téléphone valide",
+    "passwordCriteria": "Le mot de passe doit répondre aux critères"
+  },
+  "newproposal": {
+    "additionalTerms": "Conditions supplémentaires",
+    "date": "Date",
+    "enterGeneralInformation": "Entrez les informations générales",
+    "enterNote": "Entrez une note",
+    "enterPrice": "Entrez le prix",
+    "estimatedPrice": "Prix estimé",
+    "estimatedStartingDate": "Date de début estimée",
+    "generalInformation": "Informations générales",
+    "genericErrorMessage": "Une erreur s'est produite",
+    "newProposal": "Nouvelle proposition",
+    "note": "Note",
+    "price": "Prix",
+    "saySomething": "Dites quelque chose...",
+    "selectAppointmentDate": "Sélectionner la date de rendez-vous",
+    "selectAppointmentDateForQuote": "Sélectionner la date de rendez-vous pour le devis",
+    "selectServiceType": "Sélectionner le type de service",
+    "selectStartDate": "Sélectionner la date de début",
+    "servicesYouProvide": "Services que vous fournissez",
+    "submitApplyStartProject": "Soumettre et postuler pour démarrer le projet",
+    "submitProposal": "Soumettre la proposition",
+    "termsChangeWork": "Les conditions peuvent changer selon le travail",
+    "termsProvideAccess": "Conditions : Fournir l'accès",
+    "termsUnforeseenIssues": "Conditions : Problèmes imprévus"
+  },
+  "placeholders": {
+    "email": "E-mail",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "password": "Mot de passe",
+    "phoneNumber": "Numéro de téléphone",
+    "search": "Rechercher",
+    "vatNumber": "Numéro de TVA"
+  },
+  "productDetails": {
+    "condition": "Condition",
+    "descriptionTitle": "Description",
+    "joinedIn": "Rejoint en",
+    "location": "Emplacement",
+    "marketplace": "Marché",
+    "messagePlaceholder": "Salut, est-ce toujours disponible ?",
+    "readLess": "Lire moins",
+    "readMore": "Lire la suite",
+    "sellerInformation": "Informations sur le vendeur",
+    "sellerProfile": "Profil du vendeur",
+    "sendSellerMessage": "Envoyer un message au vendeur",
+    "similarListings": "Annonces similaires"
+  },
+  "proposal": {
+    "myProposal": "Ma proposition",
+    "proposalDescription": "Description de la proposition",
+    "proposals": "Propositions"
+  },
+  "proposalDetails": {
+    "clientName": "Nom du client",
+    "details": "Détails",
+    "detailsSection": "Détails",
+    "estimatedBudget": "Budget estimé",
+    "noServices": "Aucun service",
+    "processNotStarted": "Processus non commencé",
+    "proposalID": "ID de la proposition",
+    "servicesAccepted": "Services acceptés",
+    "timeline": "Calendrier",
+    "trackProgress": "Suivre la progression"
+  },
+  "requestDetails": {
+    "aboutClient": "À propos du client",
+    "activityOnProject": "Activité sur le projet",
+    "apply": "Appliquer",
+    "budget": "Budget",
+    "experience": "Expérience",
+    "invitesSent": "Invitations envoyées",
+    "jobDetails": "Détails du travail",
+    "lastViewedByClient": "Dernière consultation par le client",
+    "location": "Emplacement",
+    "proposals": "Propositions",
+    "scopeOfWork": "Portée des travaux",
+    "skillsAndExpertise": "Compétences et expertise"
+  },
+  "requestdetails": {
+    "backButton": "Retour",
+    "proposalSubmittedSuccess": "Proposition soumise avec succès",
+    "quotationCreated": "Devis créé"
+  },
+  "welcomeScreen": {
+    "buttonText": "Commencer",
+    "lastLabel": "Dernière étiquette",
+    "subLabel": "Sous-étiquette",
+    "title": "Bienvenue"
+  },
+  "yourListings": {
+    "createListing": "Créer une annonce",
+    "header": "Vos annonces",
+    "searchPlaceholder": "Rechercher"
+  }
 }

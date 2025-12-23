@@ -91,54 +91,123 @@ const CustomSearchBar = ({
   );
 };
 
+// const styles = StyleSheet.create({
+//   container: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     justifyContent: 'space-between',
+//   },
+//   searchContainer: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     paddingLeft: 10,
+//   },
+//   searchIcon: {
+//     height: hp(2),
+//     width: hp(2),
+//   },
+//   input: {
+//     fontSize: responsiveFontSize(1.41),
+//     fontFamily: 'Inter-Regular',
+//     height: 100,
+//   },
+//   backButton: {
+//     flexDirection: 'row',
+//     justifyContent: 'center',
+//   },
+//   filterButton: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+//   backButtonBackground: {
+//     height: hp(4.8),
+//     width: hp(4.8),
+//   },
+//   filterButtonBackground: {
+//     height: hp(5.6),
+//     width: hp(5.6),
+//   },
+//   backButtonIcon: {
+//     height: 16,
+//     width: 16,
+//     alignSelf: 'center',
+//   },
+//   profileImage: {
+//     height: hp(5.3),
+//     width: hp(5.3),
+//     borderRadius: 100,
+//     resizeMode: 'cover',
+//   },
+// });
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
+    paddingHorizontal: wp(2),
+    marginTop: hp(1),
   },
+
+  /** MAIN SEARCH BOX — pill style */
   searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingLeft: 10,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 50,
+    paddingHorizontal: wp(3),
+    height: hp(5.5),
+    flex: 1,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowOffset: {width: 0, height: 2},
+    shadowRadius: 6,
+    elevation: 5,
   },
+
   searchIcon: {
-    height: hp(2),
-    width: hp(2),
+    height: hp(2.3),
+    width: hp(2.3),
+    tintColor: '#7D7D7D',
+    marginRight: wp(2),
   },
+
   input: {
-    fontSize: responsiveFontSize(1.41),
+    flex: 1,
+    fontSize: responsiveFontSize(1.7),
+    color: Colors.black,
     fontFamily: 'Inter-Regular',
-    height: 100,
   },
-  backButton: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
+
+  /** FILTER BUTTON — separate rounded circle */
   filterButton: {
-    flexDirection: 'row',
+    height: hp(5.5),
+    width: hp(5.5),
+    borderRadius: hp(5.5) / 2,
+    backgroundColor: '#FFFFFF',
+    marginLeft: wp(2),
     alignItems: 'center',
     justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowOffset: {width: 0, height: 2},
+    shadowRadius: 6,
+    elevation: 5,
   },
-  backButtonBackground: {
-    height: hp(4.8),
-    width: hp(4.8),
-  },
+
   filterButtonBackground: {
-    height: hp(5.6),
-    width: hp(5.6),
+    height: hp(4.2),
+    width: hp(4.2),
+    justifyContent: 'center',
+    alignItems: 'center',
   },
+
   backButtonIcon: {
-    height: 16,
-    width: 16,
-    alignSelf: 'center',
-  },
-  profileImage: {
-    height: hp(5.3),
-    width: hp(5.3),
-    borderRadius: 100,
-    resizeMode: 'cover',
+    height: hp(2.2),
+    width: hp(2.2),
+    tintColor: '#000',
   },
 });
+
 
 export default CustomSearchBar;

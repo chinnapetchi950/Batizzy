@@ -126,7 +126,8 @@ const ConclusionScreen = () => {
   const renderListData = (item, index) => {
     const displayStatus = item?.status_human_readable;
     return (
-      <View key={index} style={[styles.bottomBorder]}>
+      <View style={{ borderColor:'#A6A6A6',
+            borderWidth:0.5,borderRadius:25,marginBottom: '4%',marginTop:15,padding:'4%'}}key={index} >
         <TouchableOpacity onPress={() => gotoContractDetailsScreen(item)}>
           <View
             style={[
@@ -374,21 +375,21 @@ const styles = StyleSheet.create({
   },
   key: {
     color: Colors.fontLightGray,
-    fontSize: responsiveFontSize(1.8),
+    fontSize: responsiveFontSize(1.9),
     width: deviceWidth / 2.5,
   },
   value: {
     color: Colors.black,
-    fontSize: responsiveFontSize(1.8),
+    fontSize: responsiveFontSize(1.9),
   },
   listCont: {
-    backgroundColor: Colors.grayBG,
+    backgroundColor: Colors.black,
     borderRadius: 4,
     marginRight: 10,
     marginVertical: 10,
   },
   listText: {
-    color: Colors.black,
+    color: Colors.white,
     fontSize: responsiveFontSize(1.6),
     paddingHorizontal: 8,
     paddingVertical: 4,

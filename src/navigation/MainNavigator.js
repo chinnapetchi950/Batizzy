@@ -37,6 +37,11 @@ import HelpScreen from '../screens/Profile/HelpScreen';
 import SettingScreen from '../screens/Profile/SettingScreen';
 import DeleteAccountScreen from '../screens/Profile/DeleteAccountScreen';
 import ChangePasswordScreen from '../screens/Profile/ChangePasswordScreen';
+import MarketPlaceListScreen from '../screens/MarketPlace/MarketPlaceListScreen';
+import SocialAllFollowerFollowingList from '../screens/SocialAllFollowerFollowingList';
+import NotificationListScreen from '../screens/NotificationListScreen';
+import MyWebView from '../screens/WebViewScreen';
+import SocialListScreen from '../screens/tabScreen/SocialListScreen';
 
 // Propasal
 
@@ -94,6 +99,18 @@ const MainNavigator = () => {
           name={routes.ChangePasswordScreen}
           component={ChangePasswordScreen}
         />
+        <Stack.Screen
+          name={routes.NotificationListScreen}
+          component={NotificationListScreen}
+        />
+         <Stack.Screen
+          name={routes.MyWebView}
+          component={MyWebView}
+        />
+         <Stack.Screen
+          name={routes.SocialListScreen}
+          component={SocialListScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -108,11 +125,22 @@ const TabNavigator = () => {
         tabBarActiveTintColor: '#6200EE', // Active icon color
         tabBarInactiveTintColor: '#808080', // Inactive icon color
         tabBarStyle: {
-          backgroundColor: '#ffffff', // Background color of the tab bar
-          height: 80,
-          paddingBottom: 10,
-          paddingHorizontal: 10,
-        },
+      position: 'absolute',
+      backgroundColor: '#754595',   // Purple bar
+      height: 62,
+      marginHorizontal: 10,
+      marginBottom: 5,
+      borderRadius: 40,
+      paddingHorizontal: 20,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      elevation: 10,
+      borderTopWidth: 0,
+    },
+    tabBarItemStyle: {
+      backgroundColor: 'transparent',
+    },
         tabBarIcon: ({focused}) => {
           // Set the image source and style based on the route name
           let imageSource;
@@ -124,18 +152,27 @@ const TabNavigator = () => {
             imageSource = focused ? icons.conclusionActive : icons.conclusion;
           } else if (route.name === routes.ChatScreen) {
             imageSource = focused ? icons.chatActive : icons.chat;
+          } else if (route.name === routes.MarketPlaceListScreen) {
+            imageSource = focused ? icons.menuActive : icons.menu;
+          } else if (route.name === routes.SocialListScreen) {
+            imageSource = focused ? icons.menuActive : icons.menu;
           } else if (route.name === routes.ProfileScreen) {
             imageSource = focused ? icons.menuActive : icons.menu;
           }
           return (
             <View
               style={{
-                backgroundColor: focused ? Colors.primary : Colors.gray,
+              backgroundColor: focused ? Colors.white : Colors.primary,
                 borderRadius: 5,
                 paddingHorizontal: 18,
                 paddingVertical: 14,
+                 width: 48,
+              height: 48,
+              borderRadius: 50,
+              alignItems:'center'
+                
               }}>
-              <Image source={imageSource} style={[styles.iconSize]} />
+              <Image  tintColor={focused ?'#754595':'#FFFFFF'}source={imageSource} style={[styles.iconSize]} />
             </View>
           );
         },
@@ -144,7 +181,10 @@ const TabNavigator = () => {
       <Tab.Screen name={routes.ProposalScreen} component={ProposalScreen} />
       <Tab.Screen name={routes.ConclusionScreen} component={ConclusionScreen} />
       <Tab.Screen name={routes.ChatScreen} component={ChatScreen} />
+      <Tab.Screen name={routes.MarketPlaceListScreen} component={MarketPlaceListScreen} />
+      <Tab.Screen name={routes.SocialListScreen} component={SocialListScreen} />
       <Tab.Screen name={routes.ProfileScreen} component={ProfileScreen} />
+
     </Tab.Navigator>
   );
 };

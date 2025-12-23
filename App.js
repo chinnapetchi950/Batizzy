@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import FlashMessage from 'react-native-flash-message';
 import Geolocation from 'react-native-geolocation-service';
+import {LanguageProvider} from './src/context/LanguageContext';
 
 LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
 LogBox.ignoreAllLogs(); // Ignore all log notifications
@@ -50,11 +51,13 @@ const App = () => {
     }
   };
   return (
-    <View style={styles.wrapper}>
-      <StatusBar backgroundColor={'white'} barStyle={'dark-content'} />
-      <MainNavigator />
-      <FlashMessage position="top" duration={3000} />
-    </View>
+    <LanguageProvider>
+      <View style={styles.wrapper}>
+        <StatusBar backgroundColor={'white'} barStyle={'dark-content'} />
+        <MainNavigator />
+        <FlashMessage position="top" duration={3000} />
+      </View>
+    </LanguageProvider>
   );
 };
 

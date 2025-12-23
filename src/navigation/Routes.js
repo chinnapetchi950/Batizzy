@@ -20,6 +20,8 @@ export const routes = {
   ProposalScreen: 'ProposalScreen',
   ConclusionScreen: 'ConclusionScreen',
   ChatScreen: 'ChatScreen',
+  MarketPlaceListScreen: 'MarketPlaceListScreen',
+  SocialAllFollowerFollowingList: 'SocialAllFollowerFollowingList',
   ProfileScreen: 'ProfileScreen',
   ContractsDetailScreen: 'ContractsDetailScreen',
 
@@ -34,4 +36,7 @@ export const routes = {
   SettingScreen: 'Setting',
   ChangePasswordScreen: 'ChangePassword',
   DeleteAccountScreen: 'DeleteAccount',
+  NotificationListScreen:'NotificationListScreen',
+  MyWebView:'MyWebView',
+  SocialListScreen:'SocialListScreen'
 };
