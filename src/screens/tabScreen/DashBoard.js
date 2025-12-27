@@ -578,7 +578,7 @@ const DashBoard = () => {
                   <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Image
                       resizeMode="contain"
-                      source={storedLanguage?.image || icons.heartFill}
+                      source={storedLanguage?.image || icons.english}
                       style={[styles.dropdownLang]}
                     />
                     <Text style={[styles.langText, {paddingLeft: 3}]}>

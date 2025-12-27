@@ -329,7 +329,7 @@ const CreateSocialPostScreen = () => {
           }}>
           <Image
             resizeMode="contain"
-            source={icons.heartFill}
+            source={icons.sendMessageIcon}
             style={styles.sendMessageIcon}
           />
         </Pressable>

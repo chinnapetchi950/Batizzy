@@ -432,7 +432,7 @@ const ProductDetails = () => {
                   onPress={() => gotoSendMessage()}>
                   <Image
                     resizeMode="contain"
-                    source={icons.heartFill}
+                    source={icons.sendMessageIcon}
                     style={styles.sendMessageIcon}
                   />
                 </TouchableOpacity>

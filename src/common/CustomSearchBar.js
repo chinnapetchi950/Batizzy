@@ -61,6 +61,7 @@ const CustomSearchBar = ({
           />
         </Pressable>
       )}
+     
       <View style={[styles.searchContainer, {width: width}]}>
         <TextInput
           value={value}
@@ -69,9 +70,9 @@ const CustomSearchBar = ({
           placeholderTextColor={Colors.fontDarkGray}
           onChangeText={onChangeText}
         />
-        <TouchableOpacity onPress={onPressSearch}>
+        {/* <TouchableOpacity onPress={onPressSearch}>
           <Image source={icons.searchIcon} style={styles.searchIcon} />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
       {isFilterBtn && (
         <TouchableOpacity onPress={onPressFilter} style={styles.filterButton}>
@@ -163,6 +164,7 @@ const styles = StyleSheet.create({
     shadowOffset: {width: 0, height: 2},
     shadowRadius: 6,
     elevation: 5,
+    marginLeft:10
   },
 
   searchIcon: {
@@ -207,6 +209,13 @@ const styles = StyleSheet.create({
     width: hp(2.2),
     tintColor: '#000',
   },
+  profileImage: {
+  height: hp(5.3),
+  width: hp(5.3),
+  borderRadius: hp(5.3) / 2, // perfectly circular
+  resizeMode: 'cover',       // ensures image fills the circle
+  overflow: 'hidden',        // clips any extra parts
+}
 });
 
 

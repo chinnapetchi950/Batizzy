@@ -242,7 +242,7 @@ const SettingScreen = props => {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                   <Image
                     resizeMode="contain"
-                    source={storedLanguage?.image || icons.heartFill}
+                    source={storedLanguage?.image || icons.english}
                     style={[ProfileStyle.dropdownLang]}
                   />
                   <Text style={[ProfileStyle.langText, {paddingLeft: 6}]}>

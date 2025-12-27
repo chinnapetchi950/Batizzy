@@ -252,7 +252,7 @@ const OtherUserProfileScreen = () => {
             <TouchableOpacity style={styles.iconRow} onPress={onPressLikeBtn}>
               <Image
                 source={
-                  post.is_liked === true ? icons.heartFill : icons.heartFill
+                  post.is_liked === true ? icons.LikeFillIcon : icons.likeIcon
                 }
                 style={styles.likeicon}
               />
@@ -260,7 +260,7 @@ const OtherUserProfileScreen = () => {
             </TouchableOpacity>
             <View style={styles.commentRow}>
               <Pressable onPress={toggleCommentSheet}>
-                <Image source={icons.heartFill} style={styles.commentIcon} />
+                <Image source={icons.commentIcon} style={styles.commentIcon} />
               </Pressable>
               <Text style={styles.countsText}>{post.total_comments}</Text>
             </View>
@@ -649,7 +649,7 @@ const OtherUserProfileScreen = () => {
               }}>
               <Image
                 source={
-                  item.is_liked === true ? icons.heartFill : icons.heartFill
+                  item.is_liked === true ? icons.LikeFillIcon : icons.likeIcon
                 }
                 style={styles.commentLikeicon}
               />
@@ -744,12 +744,12 @@ const OtherUserProfileScreen = () => {
           <Text style={styles.name}>{isSocialPostuserData?.name}</Text>
           <Image
             resizeMode="contain"
-            source={icons.heartFill}
+            source={icons.certified}
             style={styles.certifiedIcon}
           />
           <Image
             resizeMode="contain"
-            source={icons.heartFill}
+            source={icons.badgeIcon}
             style={styles.badgeIcon}
           />
         </View>
@@ -920,7 +920,7 @@ const OtherUserProfileScreen = () => {
                       PickPhotos();
                     }}>
                     <Image
-                      source={icons.heartFill}
+                      source={icons.attachment}
                       style={styles.AttchmentIcon}
                     />
                   </Pressable>
@@ -930,7 +930,7 @@ const OtherUserProfileScreen = () => {
                       PostComment(isPostIdForComment, replyingTo);
                     }}>
                     <Image
-                      source={icons.heartFill}
+                      source={icons.sendMessageIcon}
                       style={styles.sendMessageIcon}
                     />
                   </Pressable>

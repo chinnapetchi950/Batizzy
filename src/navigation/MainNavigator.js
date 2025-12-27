@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -42,7 +42,12 @@ import SocialAllFollowerFollowingList from '../screens/SocialAllFollowerFollowin
 import NotificationListScreen from '../screens/NotificationListScreen';
 import MyWebView from '../screens/WebViewScreen';
 import SocialListScreen from '../screens/tabScreen/SocialListScreen';
-
+import React, {useEffect, useState} from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { IMAGE_URL } from '../helper/ApiConstant';
+import CategoryScreen from '../screens/MarketPlace/CategoryScreen';
+import AddMarketplaceScreen from '../screens/MarketPlace/AddMarketplaceScreen';
+import MarketplaceAccountScreen from '../screens/MarketPlace/MarketplaceAccount/MarketplaceAccountScreen';
 // Propasal
 
 const Stack = createNativeStackNavigator();
@@ -111,12 +116,37 @@ const MainNavigator = () => {
           name={routes.SocialListScreen}
           component={SocialListScreen}
         />
+         <Stack.Screen
+          name={routes.Category}
+          component={CategoryScreen}
+        />
+         <Stack.Screen
+          name={routes.AddMarketplace}
+          component={AddMarketplaceScreen}
+        />
+        <Stack.Screen
+          name={routes.MarketplaceAccount}
+          component={MarketplaceAccountScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
 };
 
 const TabNavigator = () => {
+  const [profileImage, setProfileImage] = useState(null);
+
+  useEffect(() => {
+    const loadUserData = async () => {
+      const data = await AsyncStorage.getItem('userData');
+      if (data) {
+        const user = JSON.parse(data);
+        setProfileImage(user?.profile_image || null);
+      }
+    };
+
+    loadUserData();
+  }, []);
   return (
     <Tab.Navigator
       screenOptions={({route}) => ({
@@ -147,18 +177,44 @@ const TabNavigator = () => {
           if (route.name === routes.DashBoard) {
             imageSource = focused ? icons.searchActive : icons.search;
           } else if (route.name === routes.ProposalScreen) {
-            imageSource = focused ? icons.goalActive : icons.goal;
+            imageSource = focused ? icons.goal : icons.goal;
           } else if (route.name === routes.ConclusionScreen) {
-            imageSource = focused ? icons.conclusionActive : icons.conclusion;
+            imageSource = focused ? icons.conclusion : icons.conclusion;
           } else if (route.name === routes.ChatScreen) {
-            imageSource = focused ? icons.chatActive : icons.chat;
+            imageSource = focused ? icons.chat : icons.chat;
           } else if (route.name === routes.MarketPlaceListScreen) {
-            imageSource = focused ? icons.menuActive : icons.menu;
+            imageSource = focused ? icons.marketPlace : icons.marketPlace;
           } else if (route.name === routes.SocialListScreen) {
-            imageSource = focused ? icons.menuActive : icons.menu;
+            imageSource = focused ? icons.social : icons.social;
           } else if (route.name === routes.ProfileScreen) {
-            imageSource = focused ? icons.menuActive : icons.menu;
-          }
+  return (
+    <View
+      style={{
+        backgroundColor: focused ? Colors.white : Colors.primary,
+        width: 48,
+        height: 48,
+        borderRadius: 24,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+      <Image
+        source={
+          profileImage
+            ? {uri: IMAGE_URL+profileImage}
+            : focused
+            ? icons.menuActive
+            : icons.menu
+        }
+        style={{
+          width: 28,
+          height: 28,
+          borderRadius: 14,
+        }}
+      />
+    </View>
+  );
+}
+
           return (
             <View
               style={{

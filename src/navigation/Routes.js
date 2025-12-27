@@ -38,5 +38,8 @@ export const routes = {
   DeleteAccountScreen: 'DeleteAccount',
   NotificationListScreen:'NotificationListScreen',
   MyWebView:'MyWebView',
-  SocialListScreen:'SocialListScreen'
+  SocialListScreen:'SocialListScreen',
+  Category:'Category',
+  AddMarketplace:'AddMarketplace',
+  MarketplaceAccount:'MarketplaceAccount'
 };

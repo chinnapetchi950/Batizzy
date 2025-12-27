@@ -98,7 +98,7 @@ const MarketplaceAccountScreen = () => {
             onPress={() => {
               navigation.navigate(routes.YourListings);
             }}>
-            <Image source={icons.heartFill} style={styles.sellItemIcon} />
+            <Image source={icons.ListingIcon} style={styles.sellItemIcon} />
             <Text style={styles.optionText}>
               {t('marketplaceAccountScreen.yourListings')}
             </Text>
@@ -108,7 +108,7 @@ const MarketplaceAccountScreen = () => {
             onPress={() => {
               navigation.navigate(routes.FollowersList);
             }}>
-            <Image source={icons.heartFill} style={styles.sellItemIcon} />
+            <Image source={icons.ListingIcon} style={styles.sellItemIcon} />
             <Text style={styles.optionText}>
               {t('marketplaceAccountScreen.marketplaceFollowers')}
             </Text>
@@ -125,7 +125,7 @@ const MarketplaceAccountScreen = () => {
             onPress={() => {
               navigation.navigate(routes.FollowingList);
             }}>
-            <Image source={icons.heartFill} style={styles.sellItemIcon} />
+            <Image source={icons.ListingIcon} style={styles.sellItemIcon} />
             <Text style={styles.optionText}>
               {t('marketplaceAccountScreen.following')}
             </Text>

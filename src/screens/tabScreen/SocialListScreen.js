@@ -131,22 +131,29 @@ const SocialListScreen = () => {
     currentIndex,
     onClose,
   }) => {
+    const imageItems = Array.isArray(images) ? images : [];
+    
+
     return (
       <RNModal animationType="fade" transparent={false} visible={isVisible}>
         <View style={styles.fullScreenContainer}>
-          <Carousel
-            data={images}
-            renderItem={({item}) => (
-              <Image
-                source={{uri: item.uri}}
-                style={styles.fullScreenImage}
-                resizeMode="contain"
-              />
-            )}
-            sliderWidth={screenWidth}
-            itemWidth={wp(65)}
-            firstItem={currentIndex}
-          />
+          {imageItems.length > 0 && (
+  <Carousel
+    data={imageItems}
+
+    // data={imageItems}
+    renderItem={({item}) => (
+      <Image
+        source={{uri: item.uri}}
+        style={styles.fullScreenImage}
+        resizeMode="contain"
+      />
+    )}
+    sliderWidth={screenWidth}
+    itemWidth={screenWidth}
+    firstItem={Math.min(currentIndex, imageItems.length - 1)}
+  />
+)}
           <TouchableOpacity style={styles.closeButton} onPress={onClose}>
             <Image source={icons.CloseIcon} style={styles.closeButtonModal} />
           </TouchableOpacity>
@@ -189,18 +196,22 @@ const SocialListScreen = () => {
         : post.background_image
         ? [{type: 'image', uri: `${IMAGE_URL}${post.background_image}`}]
         : [];
+// console.log("mediaItems",mediaItems);
 
     const renderMedia = ({item, index}) => {
+      // console.log(item,"itemitemitemitemitemitemitemitemitem");
+      
       if (item?.type === 'image') {
         return (
-          <Pressable onPress={() => setIsFullScreenVisible(true)}>
+          <Pressable style={{marginHorizontal:10}} onPress={() => setIsFullScreenVisible(true)}>
             <Image
               source={{uri: item?.uri}}
               style={{
                 height: hp(30),
-                width: '98%',
+                width: '96%',
                 borderRadius: 15,
                 marginLeft: 3,
+                marginTop:10
               }}
               key={'media' + index}
             />
@@ -242,38 +253,18 @@ const SocialListScreen = () => {
           </View>
         ) : (
           <>
-            <Carousel
-              data={mediaItems}
-              renderItem={renderMedia}
-              sliderWidth={screenWidth}
-              itemWidth={screenWidth}
-              onSnapToItem={index => setActiveIndex(index)} // Update active index on snap
-            />
-            {mediaItems?.length > 1 && (
-              <View style={styles.pagination}>
-                {mediaItems.map((_, index) => (
-                  <View
-                    key={'slider' + index}
-                    style={[
-                      styles.dot,
-                      index === activeIndex ? styles.activeDot : null,
-                    ]}
-                  />
-                ))}
-              </View>
-            )}
-          </>
-        )}
-        <FullScreenImageViewer
-          isVisible={isFullScreenVisible}
-          images={mediaItems.filter((item, i) => item.type === 'image')}
-          currentIndex={activeIndex}
-          onClose={() => setIsFullScreenVisible(false)}
-        />
-
-        <View style={styles.detailsContainer}>
-          <View style={styles.dotContainer}>
+           <View style={styles.dotContainer}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
+               <Pressable>
+  <Image
+    source={
+      post?.user?.profile_image
+        ? { uri: IMAGE_URL + post.user.profile_image }
+        : icons.dummyUser
+    }
+    style={styles.profileImage}
+  />
+</Pressable>
               <Pressable
                 onPress={() => {
                   if (loginUserID === post?.user?.id) {
@@ -303,7 +294,7 @@ const SocialListScreen = () => {
                   setActivePostId(post?.id);
                 }}>
                 <Image
-                  source={icons.heartFill}
+                  source={icons.horizontalThreeDot}
                   style={styles.horizontalThreeDotIcon}
                 />
               </Pressable>
@@ -316,7 +307,7 @@ const SocialListScreen = () => {
                     onPresBlockBtn();
                     setActivePostId(null);
                   }}>
-                  <Image source={icons.heartFill} style={styles.blockIcon} />
+                  <Image source={icons.blockIcon} style={styles.blockIcon} />
                   <Text style={styles.blockText}>
                     {t('otheruserprofile.block')}
                   </Text>
@@ -326,7 +317,7 @@ const SocialListScreen = () => {
                   onPress={() =>
                     gotoReportUser(post?.user?.id, post?.user_type, post?.id)
                   }>
-                  <Image source={icons.heartFill} style={styles.reportIcon} />
+                  <Image source={icons.reportIcon} style={styles.reportIcon} />
                   <Text style={styles.reportText}>
                     {t('otheruserprofile.report')}
                   </Text>
@@ -334,6 +325,40 @@ const SocialListScreen = () => {
               </View>
             )}
           </View>
+          {mediaItems.length > 0 && (
+            <Carousel
+               data={mediaItems}  
+
+              renderItem={renderMedia}
+              sliderWidth={screenWidth}
+              itemWidth={screenWidth}
+              onSnapToItem={index => setActiveIndex(index)} // Update active index on snap
+            />
+          )}
+            {mediaItems?.length > 1 && (
+              <View style={styles.pagination}>
+                {mediaItems.map((_, index) => (
+                  <View
+                    key={'slider' + index}
+                    style={[
+                      styles.dot,
+                      index === activeIndex ? styles.activeDot : null,
+                    ]}
+                  />
+                ))}
+              </View>
+            )}
+          </>
+        )}
+        <FullScreenImageViewer
+          isVisible={isFullScreenVisible}
+          images={mediaItems.filter((item, i) => item.type === 'image')}
+          currentIndex={activeIndex}
+          onClose={() => setIsFullScreenVisible(false)}
+        />
+
+        <View style={styles.detailsContainer}>
+         
           <Text style={styles.time}>
             {post?.created_at_hrf} {post?.suggestedText}
           </Text>
@@ -342,14 +367,14 @@ const SocialListScreen = () => {
           <View style={styles.interactionRow}>
             <TouchableOpacity style={styles.iconRow} onPress={onPressLikeBtn}>
               <Image
-                source={post?.is_liked ? icons.heartFill : icons.heartFill}
+                source={post?.is_liked ? icons.LikeFillIcon : icons.likeIcon}
                 style={styles.likeicon}
               />
               <Text style={styles.countsText}>{post?.total_likes}</Text>
             </TouchableOpacity>
             <View style={styles.commentRow}>
               <Pressable onPress={toggleCommentSheet}>
-                <Image source={icons.heartFill} style={styles.commentIcon} />
+                <Image source={icons.commentIcon} style={styles.commentIcon} />
               </Pressable>
               <Text style={styles.countsText}>{post?.total_comments}</Text>
             </View>
@@ -418,7 +443,7 @@ const SocialListScreen = () => {
       }
 
       if (isPhotos && isPhotos.length > 0) {
-        isPhotos.forEach((image, index) => {
+        isPhotos?.forEach((image, index) => {
           formData.append('attachments[]', {
             uri: image.uri,
             type: image.type,
@@ -778,7 +803,7 @@ const SocialListScreen = () => {
               }}>
               <Image
                 source={
-                  item.is_liked === true ? icons.heartFill : icons.heartFill
+                  item.is_liked === true ? icons.LikeFillIcon : icons.likeIcon
                 }
                 style={styles.commentLikeicon}
               />
@@ -839,7 +864,7 @@ const SocialListScreen = () => {
           style={{
             flexDirection: 'row',
             alignItems: 'center',
-            marginRight: 10,
+            //marginRight: 10,
           }}>
           <CustomSearchBar
             containerStyle={{
@@ -984,7 +1009,7 @@ const SocialListScreen = () => {
                       PickPhotos();
                     }}>
                     <Image
-                      source={icons.heartFill}
+                      source={icons.attachment}
                       style={styles.AttchmentIcon}
                     />
                   </Pressable>
@@ -993,7 +1018,7 @@ const SocialListScreen = () => {
                       PostComment(isPostIdForComment, replyingTo);
                     }}>
                     <Image
-                      source={icons.heartFill}
+                      source={icons.sendMessageIcon}
                       style={styles.sendMessageIcon}
                     />
                   </Pressable>
@@ -1022,6 +1047,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF',
   },
+   profileImage: {
+  height: hp(3.3),
+  width: hp(3.3),
+  borderRadius: hp(3.3) / 2, // perfectly circular
+  resizeMode: 'cover',       // ensures image fills the circle
+  overflow: 'hidden',        // clips any extra parts
+},
   container: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1098,12 +1130,16 @@ const styles = StyleSheet.create({
     marginLeft: 5,
   },
   searchBarContainer: {
-    margin: 20,
+    margin: 5,
   },
 
   card: {
     marginBottom: 20,
+    marginTop:10,
     backgroundColor: 'white',
+    //marginHorizontal:15,
+    // alignItems:'center',
+    // alignContent:'center'
   },
   image: {
     width: '100%',
@@ -1137,6 +1173,7 @@ const styles = StyleSheet.create({
     fontSize: responsiveFontSize(1.88),
     fontFamily: 'Nunito-Medium',
     color: '#1D1D1D',
+    marginLeft: 8,
   },
   follow: {
     fontSize: responsiveFontSize(1.88),
@@ -1190,6 +1227,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    marginHorizontal:15,
+    marginBottom:10
   },
   //////
   commentMainContainer: {

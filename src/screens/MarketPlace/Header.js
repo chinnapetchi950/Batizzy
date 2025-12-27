@@ -15,6 +15,8 @@ const Header = ({
   notiCount,
 }) => {
   const navigation = useNavigation();
+    const [selectedTab, setSelectedTab] = React.useState('category');
+
   return (
     <>
       <View style={styles.wrapper}>
@@ -40,7 +42,19 @@ const Header = ({
           )}
         </View>
       </View>
-      <TopBar
+       <TopBar
+  selectedTab={selectedTab}
+  onPresCategory={() => {
+    setSelectedTab('category');
+    navigation.navigate(routes.Category);
+  }}
+  onPresSell={() => {
+    setSelectedTab('sell');
+    navigation.navigate(routes.AddMarketplace);
+  }}
+ onPressAdd={() => navigation.navigate(routes.AddMarketplace)}
+/>
+      {/* <TopBar
         onPresSell={() => {
           navigation.navigate(routes.AddMarketplace);
         }}
@@ -48,7 +62,7 @@ const Header = ({
           navigation.navigate(routes.Category);
         }}
         onPressAdd={() => navigation.navigate(routes.AddMarketplace)}
-      />
+      /> */}
     </>
   );
 };

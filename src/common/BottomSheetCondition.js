@@ -53,50 +53,89 @@ const BottomSheetCondition = ({isOpen, onClose, renderContent, maxHeight}) => {
   );
 };
 
+// const styles = StyleSheet.create({
+//   overlay: {
+//     ...StyleSheet.absoluteFillObject,
+//     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+//   },
+//   bottomSheet: {
+//     position: 'absolute',
+//     bottom: 0,
+//     left: 0,
+//     right: 0,
+//     backgroundColor: 'white',
+//     borderTopLeftRadius: 20,
+//     borderTopRightRadius: 20,
+//     paddingHorizontal: 10,
+//     paddingBottom: 20,
+//     shadowColor: '#000',
+//     shadowOffset: {
+//       width: 0,
+//       height: -2,
+//     },
+//     shadowOpacity: 0.25,
+//     shadowRadius: 3.84,
+//     elevation: 5,
+//   },
+//   header: {
+//     flexDirection: 'row',
+//   },
+//   closeButton: {
+//     position: 'absolute',
+//     top: -45,
+//     right: 0,
+//     backgroundColor: 'white',
+//     borderRadius: 15,
+//   },
+//   closeIcon: {
+//     height: 14,
+//     width: 14,
+//     resizeMode: 'contain',
+//   },
+//   contentContainer: {
+//     flexGrow: 1,
+//   },
+//   content: {
+//     paddingBottom: 20,
+//   },
+// });
 const styles = StyleSheet.create({
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0,0,0,0.5)',
   },
+
   bottomSheet: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'white',
+    backgroundColor: '#fff',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    paddingHorizontal: 10,
-    paddingBottom: 20,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: -2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    elevation: 10,
+    paddingHorizontal: 16,
+    paddingTop: 16,
   },
+
   header: {
-    flexDirection: 'row',
+    alignItems: 'flex-end',
+    marginBottom: 10,
   },
+
   closeButton: {
-    position: 'absolute',
-    top: -45,
-    right: 0,
-    backgroundColor: 'white',
-    borderRadius: 15,
+    padding: 5,
   },
+
   closeIcon: {
-    height: 14,
-    width: 14,
+    height: 18,
+    width: 18,
     resizeMode: 'contain',
   },
+
   contentContainer: {
+    paddingBottom: 30, // 🔥 prevents button cutoff
     flexGrow: 1,
-  },
-  content: {
-    paddingBottom: 20,
   },
 });
 

@@ -73,6 +73,12 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    buildFeatures {
+        // React Native disables BuildConfig generation by default; enable it because
+        // some dependencies still inject custom BuildConfig fields.
+        buildConfig true
+    }
+
     namespace "com.batizzyprofessional"
     defaultConfig {
         applicationId "com.batizzyprofessional"
