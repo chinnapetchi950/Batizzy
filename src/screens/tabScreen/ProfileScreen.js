@@ -45,13 +45,33 @@ const ProfileScreen = () => {
   };
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
-  const gotoConfirmLogout = async () => {
+ const gotoConfirmLogout = async () => {
+  try {
     setIsLogoutModalVisible(false);
+
+    // Get device token before clearing
     const deviceToken = await AsyncStorage.getItem('deviceToken');
-    AsyncStorage.clear();
-    await AsyncStorage.setItem('deviceToken', deviceToken);
-    commonActions(routes.Login);
-  };
+    console.log('Device Token:', deviceToken);
+
+    // Clear storage
+    await AsyncStorage.clear();
+
+    // Restore device token if exists
+    if (deviceToken) {
+      await AsyncStorage.setItem('deviceToken', deviceToken);
+    }
+
+    // Navigate to Login screen (reset stack)
+    navigation.reset({
+      index: 0,
+      routes: [{name: routes.Login}],
+    });
+
+  } catch (error) {
+    console.error('Logout error:', error);
+  }
+};
+
   return (
   <SafeAreaView style={styles.container}>
     
@@ -109,7 +129,7 @@ const ProfileScreen = () => {
 
       <TouchableOpacity style={styles.gridCard}>
         <Image source={icons.contract} style={styles.gridIcon} />
-        <Text style={styles.gridText}>Contract</Text>
+        <Text style={styles.gridText}>{t('settings.Contract')}</Text>
       </TouchableOpacity>
 
       
@@ -186,7 +206,7 @@ const ProfileScreen = () => {
           </View>
           <TouchableOpacity
             onPress={() => {
-              navigate(routes.HelpScreen);
+              setIsLogoutModalVisible(true)
             }}>
             <Image
               resizeMode="contain"
@@ -198,6 +218,84 @@ const ProfileScreen = () => {
             />
           </TouchableOpacity>
           </TouchableOpacity>
+          <Modal
+        isVisible={isLogoutModalVisible}
+        style={{
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
+        <View
+          style={{
+            width: '95%',
+            backgroundColor: 'white',
+            borderRadius: 8,
+            paddingVertical: hp(2),
+            paddingHorizontal: hp(2),
+          }}>
+          <Text
+            style={{
+              fontSize: fontSize(15),
+              fontFamily: 'Inter-SemiBold',
+              color: '#000000',
+              textAlign: 'center',
+              marginBottom: hp(2),
+            }}>
+            {t('settings.logoutConfirmation.message')}
+          </Text>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              marginTop: hp(2),
+            }}>
+            <TouchableOpacity
+              onPress={() => {
+                setIsLogoutModalVisible(false);
+              }}
+              style={{
+                flex: 1,
+                borderWidth: 1,
+                paddingVertical: hp(1),
+                // width: hp(17.76),
+                borderRadius: wp(2),
+                borderColor: Colors.primary,
+              }}>
+              <Text
+                style={{
+                  fontSize: fontSize(14),
+                  fontFamily: 'Inter-Bold',
+                  color: Colors.primary,
+                  textAlign: 'center',
+                }}>
+                {t('settings.logoutConfirmation.no')}
+              </Text>
+            </TouchableOpacity>
+            <View style={{width: wp(4)}}></View>
+            <TouchableOpacity
+              onPress={() => {
+                gotoConfirmLogout();
+              }}
+              style={{
+                flex: 1,
+                paddingVertical: hp(1),
+                borderRadius: wp(2),
+                borderColor: '#2D9897',
+                backgroundColor: Colors.primary,
+              }}>
+              <Text
+                style={{
+                  fontSize: fontSize(14),
+                  fontFamily: 'Inter-Bold',
+                  color: '#FFFFFF',
+                  textAlign: 'center',
+                }}>
+                {t('settings.logoutConfirmation.yes')}
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
     {/* Logout */}
     {/* <TouchableOpacity onPress={() => setIsLogoutModalVisible(true)}>
       <Text style={styles.logoutText}>

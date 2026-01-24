@@ -493,7 +493,10 @@
     "changePassword": "Passwort ändern",
     "deleteAccount": "Konto löschen",
     "generaltitle": "Allgemein",
-    "title": "Einstellungen"
+    "title": "Einstellungen",
+    "crm_invoice":"CRM & Rechnung",
+    "Contract":"Vertrag"
+
   },
   "blogDetail": {
     "no_chats_found": "Keine Chats gefunden",

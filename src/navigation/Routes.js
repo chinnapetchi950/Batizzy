@@ -41,5 +41,6 @@ export const routes = {
   SocialListScreen:'SocialListScreen',
   Category:'Category',
   AddMarketplace:'AddMarketplace',
-  MarketplaceAccount:'MarketplaceAccount'
+  MarketplaceAccount:'MarketplaceAccount',
+  ProductDetails:'ProductDetails'
 };

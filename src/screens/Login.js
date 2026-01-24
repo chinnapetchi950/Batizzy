@@ -69,6 +69,8 @@ const Login = () => {
       .then(res => {
         setIsLoading(false);
         if (res.status === true) {
+          console.log("accessTokenaccessTokenaccessToken",res.token);
+          
           AsyncStorage.setItem('accessToken', res.token);
           AsyncStorage.setItem('userData', JSON.stringify(res.user));
           showMessage({

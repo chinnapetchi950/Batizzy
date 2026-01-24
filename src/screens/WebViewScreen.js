@@ -81,6 +81,15 @@ export default function MyWebView({navigation}) {
       {cancelable: false},
     );
   };
+useEffect(() => {
+  const unsubscribe = NetInfo.addEventListener(state => {
+    if (!state.isConnected) {
+      showInternetAlert();
+    }
+  });
+
+  return () => unsubscribe();
+}, []);
 
   // FIRST TIME — show Loader while fetching token
   if (!token) {
@@ -137,7 +146,7 @@ export default function MyWebView({navigation}) {
           // Loader end + check internet
           onLoadEnd={() => {
             setIsLoading(false);
-            checkInternet(); // ✅ Check ONLY after loading stops
+    showInternetAlert();
           }}
           // Error handlers
           onError={() => {

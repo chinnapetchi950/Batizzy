@@ -30,6 +30,8 @@ const Input = ({
   return (
     <View {...props}>
       <TextInput
+        keyboardAppearance="light"
+
         style={[
           ComponentStyle.inputText,
           inputStyle,
@@ -72,6 +74,7 @@ const ComponentStyle = StyleSheet.create({
     marginTop: '5%',
     paddingLeft: 20,
     backgroundColor: Colors.white,
+    color: Colors.black,
   },
   errorText: {
     fontSize: 12,

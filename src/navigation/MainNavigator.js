@@ -48,6 +48,7 @@ import { IMAGE_URL } from '../helper/ApiConstant';
 import CategoryScreen from '../screens/MarketPlace/CategoryScreen';
 import AddMarketplaceScreen from '../screens/MarketPlace/AddMarketplaceScreen';
 import MarketplaceAccountScreen from '../screens/MarketPlace/MarketplaceAccount/MarketplaceAccountScreen';
+import ProductDetails from '../screens/MarketPlace/ProductDetails';
 // Propasal
 
 const Stack = createNativeStackNavigator();
@@ -128,6 +129,11 @@ const MainNavigator = () => {
           name={routes.MarketplaceAccount}
           component={MarketplaceAccountScreen}
         />
+        <Stack.Screen
+          name={routes.ProductDetails}
+          component={ProductDetails}
+        />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -249,7 +255,7 @@ export default MainNavigator;
 
 const styles = StyleSheet.create({
   iconSize: {
-    height: 18,
-    width: 18,
+    height: 22,
+    width: 22,
   },
 });

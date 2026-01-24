@@ -507,7 +507,8 @@
 "deleteAccount": "Supprimer le compte",
 "generaltitle": "Général",
 "title": "Paramètres",
-"crm_invoice": "CRM & Facturation"
+ "crm_invoice": "CRM & Facture",
+    "Contract": "Contrat"
   },
   "blogDetail": {
     "no_chats_found": "Aucune discussion trouvée",

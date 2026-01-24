@@ -66,6 +66,8 @@ const RequestDetails = () => {
       },
     });
     const res = await response.json();
+    console.log(res,"resresresresresresresresres");
+    
     if (res.status === true) {
       setIsRequestDetailData(res.data);
       setIsLoading(false);
@@ -230,7 +232,7 @@ const RequestDetails = () => {
               {t('requestDetails.skillsAndExpertise')}
             </Text>
             <View style={styles.skillsContainer}>
-              {isRequestDetailData?.skills.map((skill, index) => (
+              {isRequestDetailData?.skills?.map((skill, index) => (
                 <Pressable key={index} style={styles.skillBadge}>
                   <Text style={styles.skillText}>{skill.name}</Text>
                 </Pressable>
@@ -273,7 +275,7 @@ const RequestDetails = () => {
                 marginHorizontal: 15,
                 marginVertical: 10,
               }}>
-              {isRequestDetailData?.user.name}
+              {isRequestDetailData?.user?.name}
             </Text>
             <Text
               style={{
